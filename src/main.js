@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import Vant from "vant";
+// import Vant from "vant";
 
 import "vant/lib/index.css";
 
@@ -11,7 +11,7 @@ import "./assets/stylus/reset.stylus";
 
 import "amfe-flexible";
 
-Vue.use(Vant);
+// Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
