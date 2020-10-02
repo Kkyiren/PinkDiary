@@ -1,7 +1,17 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <router-view></router-view>
+    <v-footer></v-footer>
+  </div>
 </template>
-
+<script>
+import VFooter from "./components/VFooter";
+export default {
+  components: {
+    VFooter
+  }
+};
+</script>
 <style lang="stylus">
 #app
   font-family Avenir, Helvetica, Arial, sans-serif

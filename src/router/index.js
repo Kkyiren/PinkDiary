@@ -8,7 +8,16 @@ VueRouter.prototype.push = function push(location) {
 
 Vue.use(VueRouter);
 
-const routes = [];
+const routes = [
+  {
+    path: "/",
+    redirect: "/time"
+  },
+  {
+    path: "/time",
+    component: () => import("../views/TimeLine.vue")
+  }
+];
 
 const router = new VueRouter({
   routes
