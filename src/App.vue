@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <v-footer></v-footer>
+    <v-footer class="footer"></v-footer>
   </div>
 </template>
 <script>
@@ -14,8 +14,9 @@ export default {
 </script>
 <style lang="stylus">
 #app
+  width 375px
   padding-bottom 49px
-  v-footer
+  .footer
     position fixed
     bottom 0
     z-index 100
