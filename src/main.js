@@ -5,6 +5,10 @@ import store from "./store";
 
 // import Vant from "vant";
 
+import { Popup } from "vant";
+
+Vue.use(Popup);
+
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";

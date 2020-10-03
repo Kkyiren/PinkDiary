@@ -53,10 +53,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .footer
-  width 375px
+  width 378px
   height 49px
   background #fff
   position fixed
+  z-index 3000
   bottom 0
   ul
     width 100%
