@@ -9,6 +9,26 @@ import { Popup } from "vant";
 
 Vue.use(Popup);
 
+// 以下来自yjz
+import {
+  NavBar,
+  Image as VanImage,
+  Swipe,
+  SwipeItem,
+  Grid,
+  GridItem
+} from "vant";
+Vue.use(NavBar);
+// index头部标题按钮
+Vue.use(VanImage);
+// vant图片
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+// 轮播图
+Vue.use(Grid);
+Vue.use(GridItem);
+// grid宫格
+
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
