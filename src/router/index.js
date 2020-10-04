@@ -11,7 +11,11 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "/time"
+    redirect: "/index"
+  },
+  {
+    path: "/index",
+    component: () => import("../views/Index.vue")
   },
   {
     path: "/time",
