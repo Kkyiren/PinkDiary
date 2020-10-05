@@ -24,46 +24,87 @@
     </van-swipe>
     <!-- 轮播图 -->
 
-    <van-grid :border="false" :column-num="5">
-      <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+    <van-grid :border="false" :column-num="5" :square="true">
+      <van-grid-item to="/diary">
+        <img src="../assets/img/yjz-index/日记.png" />
+        <p>日记</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+        <img src="../assets/img/yjz-index/手账.png" />
+        <p>手账</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+        <img src="../assets/img/yjz-index/记账本.png" />
+        <p>记账本</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+        <img src="../assets/img/yjz-index/计划表.png" />
+        <p>计划表</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+        <img src="../assets/img/yjz-index/纪念日.png" />
+        <p>纪念日</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+        <img src="../assets/img/yjz-index/星座.png" />
+        <p>星座</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+        <img src="../assets/img/yjz-index/shopping.png" />
+        <p>购物领券</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+        <img src="../assets/img/yjz-index/庄园物语.png" />
+        <p>庄园物语</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+        <img src="../assets/img/yjz-index/热门小说.png" />
+        <p>热门小说</p>
       </van-grid-item>
       <van-grid-item>
-        <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+        <img src="../assets/img/yjz-index/更多.png" />
+        <p>更多</p>
       </van-grid-item>
     </van-grid>
     <!-- grid宫格 -->
+
+    <van-tabs v-model="active" :sticky="true">
+      <van-tab title="关注">
+        <div class="love">
+          <h3>520~加倍爱你【内含宠粉福利】</h3>
+          <div class="logo">
+            <img src="../assets/img/yjz-index/logo.png" alt="" />
+            <span>粉粉管理员</span>
+          </div>
+          <img src="../assets/img/yjz-index/love.png" alt="" />
+          <p>文末有福利哦~</p>
+          <div class="people">
+            <span class="look">689</span>
+            <p>在看</p>
+            <span class="speak">14</span>
+            <p>评论</p>
+          </div>
+        </div>
+      </van-tab>
+      <van-tab title="推荐">
+        <p>推荐</p>
+      </van-tab>
+    </van-tabs>
+    <!-- tab标签页 -->
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      active: 0,
+      gridList: [
+        {
+          title: "lalala"
+        }
+      ]
+    };
   }
 };
 </script>
@@ -85,8 +126,4 @@ export default {
       margin 0 15px
       img
         height 28px
-  .index-swipe
-    width 100%
-    img
-      width 100%
 </style>

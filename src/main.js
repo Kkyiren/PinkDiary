@@ -16,7 +16,9 @@ import {
   Swipe,
   SwipeItem,
   Grid,
-  GridItem
+  GridItem,
+  Tab,
+  Tabs
 } from "vant";
 Vue.use(NavBar);
 // index头部标题按钮
@@ -28,10 +30,16 @@ Vue.use(SwipeItem);
 Vue.use(Grid);
 Vue.use(GridItem);
 // grid宫格
-
+Vue.use(Tab);
+Vue.use(Tabs);
+// tab标签页
+// 以上来自yjz
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
+
+import "./assets/stylus/yjz-stylus.stylus";
+// yjz-stylus样式
 
 import "amfe-flexible";
 
