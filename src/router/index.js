@@ -21,6 +21,11 @@ const routes = [{
         path: "/mall",
         component: () =>
             import ("../views/NMall.vue")
+    },
+    {
+        path: "/setup",
+        component: () =>
+            import ("../views/NSetup.vue")
     }
 ];
 

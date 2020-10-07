@@ -5,9 +5,14 @@ import store from "./store";
 
 // import Vant from "vant";
 
-import { Popup } from "vant";
-
+import { Popup, NavBar, Cell, CellGroup } from "vant";
 Vue.use(Popup);
+Vue.use(NavBar);
+Vue.use(Cell);
+Vue.use(CellGroup);
+
+
+
 
 import "vant/lib/index.css";
 
@@ -20,7 +25,7 @@ import "amfe-flexible";
 Vue.config.productionTip = true;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount("#app");
