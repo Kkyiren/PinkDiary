@@ -38,7 +38,8 @@ import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
 
-import "./assets/stylus/yjz-stylus.stylus";
+import "./assets/stylus/yjz-index.stylus";
+import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
 
 import "amfe-flexible";

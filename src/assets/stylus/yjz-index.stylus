@@ -14,7 +14,7 @@
     .van-grid-item__content
       background-color #fbf7f8
   img
-    width 95%
+    width 90%
   p
     margin-top 5px
 // grid宫格
@@ -35,18 +35,19 @@
   .van-tabs__content
     .van-tab__pane
       background-color #fbf7f8
-      .love
+      .mode
         width 100%
         padding 30px 15px 0 15px
+        margin-bottom 15px
         background-color #ffffff
         display flex
         flex-direction column
         align-items flex-start
         h3
-          font-size 22px
-          font-weight 500
+          font-size 18px
+          font-weight 600
         .logo
-          margin 10px 0 6px 0
+          margin 25px 0 6px 0
           display flex
           align-items center
           img
@@ -55,3 +56,21 @@
             font-size 16px
             margin-left 5px
             color #ec889b
+        > img
+          width 100%
+        .title
+          width 100%
+          color #727272
+          font-size 14px
+          margin-top 10px
+          text-overflow ellipsis
+          overflow hidden
+          white-space nowrap
+        .people
+          display flex
+          font-size 12px
+          margin 10px 0
+          color #a9a9a9
+          span, p
+            margin-right 10px
+// 内容版块
