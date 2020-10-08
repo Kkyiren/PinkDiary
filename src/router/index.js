@@ -11,11 +11,15 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "/time"
+    redirect: "/index"
   },
   {
-    path: "/time",
-    component: () => import("../views/TimeLine.vue")
+    path: "/index",
+    component: () => import("../views/Index.vue")
+  },
+  {
+    path: "/planet",
+    component: () => import("../views/Planet.vue")
   }
 ];
 
