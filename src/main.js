@@ -8,6 +8,7 @@ import store from "./store";
 import { Popup } from "vant";
 
 Vue.use(Popup);
+// Vue.use(Cell);
 
 // 以下来自yjz
 import {

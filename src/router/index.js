@@ -24,10 +24,6 @@ const routes = [
   {
     path: "/diary",
     component: () => import("../views/Diary.vue")
-  },
-  {
-    path: "/time",
-    component: () => import("../views/TimeLine.vue")
   }
 ];
 
