@@ -18,6 +18,10 @@ const routes = [
     component: () => import("../views/Index.vue")
   },
   {
+    path: "/planet",
+    component: () => import("../views/Planet.vue")
+  },
+  {
     path: "/diary",
     component: () => import("../views/Diary.vue")
   },

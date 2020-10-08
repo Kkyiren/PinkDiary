@@ -27,11 +27,13 @@ export default {
       imgList: [
         {
           imgUrl: TimeLine,
-          text: "时间线"
+          text: "时间线",
+          url: "/index"
         },
         {
           imgUrl: Planet,
-          text: ""
+          text: "",
+          url: "/planet"
         },
         {
           imgUrl: Community,
