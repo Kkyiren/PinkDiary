@@ -3,28 +3,32 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// import Vant from "vant";
-
-import { Popup,Icon,Calendar,Overlay } from "vant";
-
-Vue.use(Popup);
-Vue.use(Icon);
-Vue.use(Calendar);
-Vue.use(Overlay);
-
-// Vue.use(Cell);
-
 // 以下来自yjz
 import {
+  Popup,
   NavBar,
+  Icon,
+  Calendar,
+  Overlay,
   Image as VanImage,
   Swipe,
   SwipeItem,
   Grid,
   GridItem,
   Tab,
-  Tabs
+  Tabs,
+  CellGroup,
+  Sidebar,
+  SidebarItem
 } from "vant";
+
+Vue.use(Popup);
+// Vue.use(Cell);
+Vue.use(Popup);
+Vue.use(NavBar);
+// Vue.use(Cell);
+Vue.use(CellGroup);
+// 以下来自yjz
 Vue.use(NavBar);
 // index头部标题按钮
 Vue.use(VanImage);
@@ -39,6 +43,13 @@ Vue.use(Tab);
 Vue.use(Tabs);
 // tab标签页
 // 以上来自yjz
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Calendar);
+Vue.use(Overlay);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
+
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
@@ -49,6 +60,7 @@ import "./assets/stylus/yjz-diary.stylus";
 
 import "amfe-flexible";
 
+// Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
