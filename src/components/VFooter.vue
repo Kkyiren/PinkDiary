@@ -5,7 +5,7 @@
         <div class="footer-icon">
           <img :src="item.imgUrl" alt="" />
         </div>
-        <div class="footer-text" v-if="index != 1">
+        <div class="footer-text" v-if="index != 1" >
           {{ item.text }}
         </div>
         <div v-else class="imgtext">
@@ -37,7 +37,8 @@ export default {
         },
         {
           imgUrl: Community,
-          text: "社区"
+          text: "社区",
+          url:"/community"
         },
         {
           imgUrl: Shop,
@@ -89,6 +90,8 @@ export default {
       .footer-text
         color #A7A7A7
         font-size 10px
+      .active 
+        color pink
       .imgtext
         width 40px
         height 10px
