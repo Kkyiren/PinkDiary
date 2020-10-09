@@ -4,12 +4,12 @@
         <header>
             <div class="top">
                 <div class="left">
-                    <img src="../assets/images/粉粉-商店_slices/返回.png" alt="">
+                    <img src="../assets/images/粉粉-商店_slices/返回.png" alt="" />
                 </div>
                 <div class="center">商店</div>
                 <div class="right">
-                    <img src="../assets/images/粉粉-商店_slices/分享图标.png" alt="">
-                    <img src="../assets/images/粉粉-商店_slices/拍照图标.png" alt="">
+                    <img src="../assets/images/粉粉-商店_slices/分享图标.png" alt="" />
+                    <img src="../assets/images/粉粉-商店_slices/拍照图标.png" alt="" />
                 </div>
             </div>
             <input type="text" class="bottom" placeholder="搜索宝贝">
@@ -39,66 +39,66 @@
             </van-sidebar>
             <div class="article">
                 <h6>热门推荐</h6>
-                <img src="../assets/images/粉粉-商店_slices/手机banner.png" alt="">
+                <img src="../assets/images/粉粉-商店_slices/手机banner.png" alt="" />
                 <ul>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/图层 2.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/图层 2.png" alt="" />
                         <p>华为</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/智能手环.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/智能手环.png" alt="" />
                         <p>智能手环</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/单反相机图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/单反相机图.png" alt="" />
                         <p>单反相机</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/创意手环图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/创意手环图.png" alt="" />
                         <p>创意手环</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/小米耳机图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/小米耳机图.png" alt="" />
                         <p>小米耳机</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/DV摄像机图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/DV摄像机图.png" alt="" />
                         <p>DV摄像机</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/照相机图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/照相机图.png" alt="" />
                         <p>照相机</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/魔音耳机图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/魔音耳机图.png" alt="" />
                         <p>魔音耳机</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/vivo图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/vivo图.png" alt="" />
                         <p>vivo手机</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/图.png" alt="" />
                         <p>音箱</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/充电器图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/充电器图.png" alt="" />
                         <p>充电器</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/创意手环图.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/创意手环图.png" alt="" />
                         <p>智能手环</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/话筒.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/话筒.png" alt="" />
                         <p>话筒</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/U盘.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/U盘.png" alt="" />
                         <p>U盘</p>
                     </li>
                     <li>
-                        <img src="../assets/images/粉粉-商店_slices/图层 3 拷贝.png" alt="">
+                        <img src="../assets/images/粉粉-商店_slices/图层 3 拷贝.png" alt="" />
                         <p>移动硬盘</p>
                     </li>
                 </ul>
