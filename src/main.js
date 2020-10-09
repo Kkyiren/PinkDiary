@@ -17,7 +17,9 @@ import {
   GridItem,
   Tab,
   Tabs,
-  CellGroup
+  CellGroup,
+  Sidebar,
+  SidebarItem
 } from "vant";
 
 Vue.use(Popup);
@@ -45,6 +47,8 @@ Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Calendar);
 Vue.use(Overlay);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
 
 import "vant/lib/index.css";
 
@@ -55,6 +59,8 @@ import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
 
 import "amfe-flexible";
+
+// Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
