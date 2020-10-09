@@ -1,6 +1,7 @@
 <template>
   <div class="footer">
     <ul>
+<<<<<<< HEAD
       <li v-for="(item, index) in imgList" :key="index">
         <router-link :to="item.url">
           <div class="footer-icon">
@@ -12,6 +13,18 @@
           <div v-else class="imgtext">
             <img src="../assets/img/pink-02/imgtext.png" alt="" /></div
         ></router-link>
+=======
+      <li v-for="(item, index) in imgList" :key="index" @click="tab(item)">
+        <div class="footer-icon">
+          <img :src="item.imgUrl" alt="" />
+        </div>
+        <div class="footer-text" v-if="index != 1">
+          {{ item.text }}
+        </div>
+        <div v-else class="imgtext">
+          <img src="../assets/img/pink-02/imgtext.png" alt="" />
+        </div>
+>>>>>>> master
       </li>
     </ul>
   </div>
@@ -29,12 +42,20 @@ export default {
         {
           imgUrl: TimeLine,
           text: "时间线",
+<<<<<<< HEAD
           url: "/time"
+=======
+          url: "/index"
+>>>>>>> master
         },
         {
           imgUrl: Planet,
           text: "",
+<<<<<<< HEAD
           url: "/mall"
+=======
+          url: "/planet"
+>>>>>>> master
         },
         {
           imgUrl: Community,
@@ -55,7 +76,15 @@ export default {
       isactive: 0
     };
   },
+<<<<<<< HEAD
   methods: {}
+=======
+  methods: {
+    tab(item) {
+      this.$router.push(item.url);
+    }
+  }
+>>>>>>> master
 };
 </script>
 <style lang="stylus" scoped>

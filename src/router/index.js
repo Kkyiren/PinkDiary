@@ -8,6 +8,7 @@ VueRouter.prototype.push = function push(location) {
 
 Vue.use(VueRouter);
 
+<<<<<<< HEAD
 const routes = [{
         path: "/",
         redirect: "/time"
@@ -27,6 +28,25 @@ const routes = [{
         component: () =>
             import ("../views/NSetup.vue")
     }
+=======
+const routes = [
+  {
+    path: "/",
+    redirect: "/index"
+  },
+  {
+    path: "/index",
+    component: () => import("../views/Index.vue")
+  },
+  {
+    path: "/planet",
+    component: () => import("../views/Planet.vue")
+  },
+  {
+    path: "/diary",
+    component: () => import("../views/Diary.vue")
+  }
+>>>>>>> master
 ];
 
 const router = new VueRouter({

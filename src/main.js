@@ -7,6 +7,7 @@ import store from "./store";
 
 import { Popup, NavBar, Cell, CellGroup } from "vant";
 Vue.use(Popup);
+<<<<<<< HEAD
 Vue.use(NavBar);
 Vue.use(Cell);
 Vue.use(CellGroup);
@@ -14,9 +15,42 @@ Vue.use(CellGroup);
 
 
 
+=======
+// Vue.use(Cell);
+
+// 以下来自yjz
+import {
+  NavBar,
+  Image as VanImage,
+  Swipe,
+  SwipeItem,
+  Grid,
+  GridItem,
+  Tab,
+  Tabs
+} from "vant";
+Vue.use(NavBar);
+// index头部标题按钮
+Vue.use(VanImage);
+// vant图片
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+// 轮播图
+Vue.use(Grid);
+Vue.use(GridItem);
+// grid宫格
+Vue.use(Tab);
+Vue.use(Tabs);
+// tab标签页
+// 以上来自yjz
+>>>>>>> master
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
+
+import "./assets/stylus/yjz-index.stylus";
+import "./assets/stylus/yjz-diary.stylus";
+// yjz-stylus样式
 
 import "amfe-flexible";
 
