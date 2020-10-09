@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 
 const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location) {
-    return originalPush.call(this, location).catch(err => err);
+  return originalPush.call(this, location).catch(err => err);
 };
 
 Vue.use(VueRouter);
@@ -75,13 +75,16 @@ const routes = [
   },
   {
     path: "/hotnovel",
-    component: () =>
-        import ("../views/HotNovel.vue")
+    component: () => import("../views/HotNovel.vue")
+  },
+  {
+    path: "*",
+    component: () => import("../views/NotFound.vue")
   }
 ];
 
 const router = new VueRouter({
-    routes
+  routes
 });
 
 export default router;
