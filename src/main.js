@@ -5,6 +5,7 @@ import store from "./store";
 
 // import Vant from "vant";
 
+<<<<<<< HEAD
 import { Popup, NavBar, Cell, CellGroup } from "vant";
 Vue.use(Popup);
 <<<<<<< HEAD
@@ -19,8 +20,14 @@ Vue.use(CellGroup);
 // Vue.use(Cell);
 
 // 以下来自yjz
+=======
+>>>>>>> master
 import {
+  Popup,
   NavBar,
+  Icon,
+  Calendar,
+  Overlay,
   Image as VanImage,
   Swipe,
   SwipeItem,
@@ -29,6 +36,11 @@ import {
   Tab,
   Tabs
 } from "vant";
+
+Vue.use(Popup);
+// Vue.use(Cell);
+
+// 以下来自yjz
 Vue.use(NavBar);
 // index头部标题按钮
 Vue.use(VanImage);
@@ -43,6 +55,14 @@ Vue.use(Tab);
 Vue.use(Tabs);
 // tab标签页
 // 以上来自yjz
+<<<<<<< HEAD
+>>>>>>> master
+=======
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Calendar);
+Vue.use(Overlay);
+
 >>>>>>> master
 import "vant/lib/index.css";
 
@@ -53,8 +73,6 @@ import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
 
 import "amfe-flexible";
-
-// Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
