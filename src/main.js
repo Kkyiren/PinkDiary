@@ -5,9 +5,13 @@ import store from "./store";
 
 // import Vant from "vant";
 
-import { Popup } from "vant";
+import { Popup,NavBar,Icon,Calendar,Overlay } from "vant";
 
 Vue.use(Popup);
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Calendar);
+Vue.use(Overlay);
 
 import "vant/lib/index.css";
 
@@ -15,7 +19,6 @@ import "./assets/stylus/reset.stylus";
 
 import "amfe-flexible";
 
-// Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
