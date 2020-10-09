@@ -11,12 +11,12 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "/time"
+    redirect: "/index"
   },
-  {
-    path: "/time",
-    component: () => import("../views/TimeLine.vue")
-  },
+  // {
+  //   path: "/time",
+  //   component: () => import("../views/TimeLine.vue")
+  // },
   // 沈万生对应的页面 TallyBook && MemorialDay && Constellation
   // 图片资源路径 /src/assets/img/pink-09
   {
@@ -30,6 +30,18 @@ const routes = [
   {
     path:'/constellation',
     component: () => import('../components/Constellation.vue')
+  },
+  {
+    path: "/index",
+    component: () => import("../views/Index.vue")
+  },
+  {
+    path: "/planet",
+    component: () => import("../views/Planet.vue")
+  },
+  {
+    path: "/diary",
+    component: () => import("../views/Diary.vue")
   }
 ];
 

@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <ul>
-      <li v-for="(item, index) in imgList" :key="index">
+      <li v-for="(item, index) in imgList" :key="index" @click="tab(item)">
         <div class="footer-icon">
           <img :src="item.imgUrl" alt="" />
         </div>
@@ -27,11 +27,13 @@ export default {
       imgList: [
         {
           imgUrl: TimeLine,
-          text: "时间线"
+          text: "时间线",
+          url: "/index"
         },
         {
           imgUrl: Planet,
-          text: ""
+          text: "",
+          url: "/planet"
         },
         {
           imgUrl: Community,
@@ -48,6 +50,11 @@ export default {
       ],
       isactive: 0
     };
+  },
+  methods: {
+    tab(item) {
+      this.$router.push(item.url);
+    }
   }
 };
 </script>

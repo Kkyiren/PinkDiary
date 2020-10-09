@@ -51,9 +51,7 @@
       </div>
     </div>
     <!-- 领取更多粉币 -->
-    <van-cell is-link @click="showPopup" class="layout"
-      >领取更多粉币</van-cell
-    >
+    <van-cell is-link @click="showPopup" class="layout">领取更多粉币</van-cell>
     <van-popup
       v-model="show"
       position="bottom"
@@ -63,7 +61,7 @@
       <div class="layout-top">
         <div class="title">
           <span>领取更多粉币</span>
-          <img src="../assets/img/pink-02/getmore.png" alt="">
+          <img src="../assets/img/pink-02/getmore.png" alt="" />
         </div>
         <div class="signed">
           <div class="signed-top">
@@ -78,70 +76,78 @@
           <div class="signed-body">
             <div class="line"></div>
             <div class="wrap">
-              <div class="record" v-for="(item,index) in dateList" :key="index">
-                <img src="../assets/img/pink-morecoin/coin.png" alt="">
+              <div
+                class="record"
+                v-for="(item, index) in dateList"
+                :key="index"
+              >
+                <img src="../assets/img/pink-morecoin/coin.png" alt="" />
                 <span>{{ item }}</span>
               </div>
             </div>
           </div>
         </div>
         <ul class="nav">
-            <li>
-              <span>萌新专属</span>
-              <div class="sym"></div>
-            </li>
-            <li>
-              <span>每日可领</span>
-            </li>
-          </ul>
+          <li>
+            <span>萌新专属</span>
+            <div class="sym"></div>
+          </li>
+          <li>
+            <span>每日可领</span>
+          </li>
+        </ul>
       </div>
       <div class="task-body">
         <div class="newbie-task task">
-        <div class="title">新手任务</div>
-        <div class="task-list" v-for="(ite,ind) in newbieTaskList" :key="ind">
-          <div class="list-icon">
-            <img :src="ite.img" alt="">
-          </div>
-          <div class="list-info">
-            <h3 class="task-title">{{ ite.task }}</h3>
-            <div class="task-reward">
-              <img src="../assets/img/pink-morecoin/reward.png" alt="">
-              <span v-if="ite.reward">{{ ite.reward }}&nbsp;粉币</span>
-              <span v-else>每消费&nbsp;1&nbsp;粉钻奖励&nbsp;1&nbsp;粉币</span>
+          <div class="title">新手任务</div>
+          <div
+            class="task-list"
+            v-for="(ite, ind) in newbieTaskList"
+            :key="ind"
+          >
+            <div class="list-icon">
+              <img :src="ite.img" alt="" />
             </div>
-            <div class="task-progress" v-if="ite.isprogress">
-              <div></div>
-              <span>{{ ite.completed }}</span>
-              <span>/</span>
-              <span>{{ ite.total }}</span>
+            <div class="list-info">
+              <h3 class="task-title">{{ ite.task }}</h3>
+              <div class="task-reward">
+                <img src="../assets/img/pink-morecoin/reward.png" alt="" />
+                <span v-if="ite.reward">{{ ite.reward }}&nbsp;粉币</span>
+                <span v-else>每消费&nbsp;1&nbsp;粉钻奖励&nbsp;1&nbsp;粉币</span>
+              </div>
+              <div class="task-progress" v-if="ite.isprogress">
+                <div></div>
+                <span>{{ ite.completed }}</span>
+                <span>/</span>
+                <span>{{ ite.total }}</span>
+              </div>
             </div>
+            <div class="button">去完成</div>
           </div>
-          <div class="button">去完成</div>
         </div>
-      </div>
-      <div class="daily-task task">
-        <div class="title">每日任务</div>
-        <div class="task-list" v-for="(it,inn) in dailyTaskList" :key="inn">
-          <div class="list-icon">
-            <img :src="it.img" alt="">
-          </div>
-          <div class="list-info">
-            <h3 class="task-title">{{ it.task }}</h3>
-            <div class="task-reward">
-              <img src="../assets/img/pink-morecoin/reward.png" alt="">
-              <span v-if="it.reward">{{ it.reward }}&nbsp;粉币</span>
-              <span v-else>每消费&nbsp;1&nbsp;粉钻奖励&nbsp;1&nbsp;粉币</span>
+        <div class="daily-task task">
+          <div class="title">每日任务</div>
+          <div class="task-list" v-for="(it, inn) in dailyTaskList" :key="inn">
+            <div class="list-icon">
+              <img :src="it.img" alt="" />
             </div>
-            <div class="task-progress" v-if="it.isprogress">
-              <div class="progress"></div>
-              <span>{{ it.completed }}</span>
-              <span>/</span>
-              <span>{{ it.total }}</span>
+            <div class="list-info">
+              <h3 class="task-title">{{ it.task }}</h3>
+              <div class="task-reward">
+                <img src="../assets/img/pink-morecoin/reward.png" alt="" />
+                <span v-if="it.reward">{{ it.reward }}&nbsp;粉币</span>
+                <span v-else>每消费&nbsp;1&nbsp;粉钻奖励&nbsp;1&nbsp;粉币</span>
+              </div>
+              <div class="task-progress" v-if="it.isprogress">
+                <div class="progress"></div>
+                <span>{{ it.completed }}</span>
+                <span>/</span>
+                <span>{{ it.total }}</span>
+              </div>
             </div>
+            <div class="button">去完成</div>
           </div>
-          <div class="button">去完成</div>
         </div>
-      </div>
       </div>
       <v-footer></v-footer>
     </van-popup>
