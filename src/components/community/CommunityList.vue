@@ -1,6 +1,6 @@
 <template>
     <div class="communitylist">
-        <van-grid :column-num="5">
+        <van-grid :border="false" :column-num="5">
             <van-grid-item>
                   <img src="../../assets/img/pink-community/icon-01.png" alt="">
                   <span class="van-span">恋爱叨逼叨</span>
@@ -50,12 +50,12 @@
   .van-grid-item
     border none
     img 
-        width 49px
-        height 49px
-        margin-bottom 6px
-    span 
-        font-size: 11px;
-        font-family: PingFang;
-        font-weight: bold;
-        color: #222222;
+      width 49px
+      height 49px
+      margin-bottom 6px
+    .van-span 
+      font-size: 11px;
+      font-family: PingFang;
+      font-weight: bold;
+      color: #222222;
 </style>
