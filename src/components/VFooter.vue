@@ -7,7 +7,7 @@
         @click="change(item, index)"
       >
         <router-link :to="item.path">
-          <div class="footer-icon">
+          <div class="footer-icon" :class="{ alone: index == 1 }">
             <img :src="item.imgUrl" alt="" v-show="num != index" />
             <img :src="item.imgUrl1" alt="" v-show="num == index" />
           </div>
@@ -98,6 +98,17 @@ export default {
         height: 24px;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        img {
+          width: 24px;
+          height: 23px;
+        }
+      }
+
+      .alone {
+        width: 38px;
+        height: 26px;
 
         img {
           width: 100%;
@@ -108,6 +119,8 @@ export default {
       .footer-text {
         color: #A7A7A7;
         font-size: 10px;
+        margin-top: 3px;
+        text-align: center;
       }
 
       .active {
@@ -117,12 +130,14 @@ export default {
       .imgtext {
         width: 40px;
         height: 10px;
+        margin-top: 3px;
 
         img {
           width: 100%;
           height: 100%;
           display: flex;
           align-items: center;
+          justify-content: center;
         }
       }
     }
