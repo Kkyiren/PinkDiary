@@ -3,17 +3,13 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// import Vant from "vant";
-
-import { Popup } from "vant";
-
-Vue.use(Popup);
-
-// Vue.use(Cell);
-
 // 以下来自yjz
 import {
+  Popup,
   NavBar,
+  Icon,
+  Calendar,
+  Overlay,
   Image as VanImage,
   Swipe,
   SwipeItem,
@@ -21,8 +17,20 @@ import {
   GridItem,
   Tab,
   Tabs,
-  Search
+  CellGroup,
+  Sidebar,
+  SidebarItem,
+  Search,
+  Cell
 } from "vant";
+
+Vue.use(Popup);
+Vue.use(Cell);
+Vue.use(Popup);
+Vue.use(NavBar);
+// Vue.use(Cell);
+Vue.use(CellGroup);
+// 以下来自yjz
 Vue.use(NavBar);
 // index头部标题按钮
 Vue.use(VanImage);
@@ -37,6 +45,15 @@ Vue.use(Tab);
 Vue.use(Tabs);
 // tab标签页
 // 以上来自yjz
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Calendar);
+Vue.use(Overlay);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
+// import Vant from "vant";
+Vue.use(Search);
+
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
