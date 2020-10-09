@@ -140,6 +140,7 @@
                 height 18px
             .center
                 font-size 18px
+                margin-left 13%
             .right
                 width 70px
                 display flex
