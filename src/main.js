@@ -8,6 +8,7 @@ import store from "./store";
 import { Popup } from "vant";
 
 Vue.use(Popup);
+
 // Vue.use(Cell);
 
 // 以下来自yjz
@@ -19,7 +20,8 @@ import {
   Grid,
   GridItem,
   Tab,
-  Tabs
+  Tabs,
+  Search
 } from "vant";
 Vue.use(NavBar);
 // index头部标题按钮
@@ -42,6 +44,11 @@ import "./assets/stylus/reset.stylus";
 import "./assets/stylus/yjz-index.stylus";
 import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
+
+//yjj-stylus样式
+import "./assets/stylus/yjj-hotnovel.stylus";
+//搜索
+Vue.use(Search);
 
 import "amfe-flexible";
 
