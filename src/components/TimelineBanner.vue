@@ -335,7 +335,7 @@ export default {
         height 100%
     .content
       width 54px
-      padding-right 4px
+      // padding-right 4px
       display flex
       flex-direction column
       justify-content center
