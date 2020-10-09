@@ -5,13 +5,12 @@ import store from "./store";
 
 // import Vant from "vant";
 
-import { Popup,NavBar,Icon,Calendar,Overlay } from "vant";
-
-Vue.use(Popup);
-// Vue.use(Cell);
-
-// 以下来自yjz
 import {
+  Popup,
+  NavBar,
+  Icon,
+  Calendar,
+  Overlay,
   Image as VanImage,
   Swipe,
   SwipeItem,
@@ -20,6 +19,11 @@ import {
   Tab,
   Tabs
 } from "vant";
+
+Vue.use(Popup);
+// Vue.use(Cell);
+
+// 以下来自yjz
 Vue.use(NavBar);
 // index头部标题按钮
 Vue.use(VanImage);
@@ -48,7 +52,6 @@ import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
 
 import "amfe-flexible";
-
 
 Vue.config.productionTip = true;
 
