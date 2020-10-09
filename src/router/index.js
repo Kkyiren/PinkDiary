@@ -24,6 +24,20 @@ const routes = [
   {
     path: "/diary",
     component: () => import("../views/Diary.vue")
+  },
+  // 沈万生对应的页面 TallyBook && MemorialDay && Constellation
+  // 图片资源路径 /src/assets/img/pink-09
+  {
+    path: "/tallyBook",
+    component: () => import("../components/TallyBook.vue")
+  },
+  {
+    path: "/memorialDay",
+    component: () => import("../components/MemorialDay.vue")
+  },
+  {
+    path: "/constellation",
+    component: () => import("../components/Constellation.vue")
   }
 ];
 
