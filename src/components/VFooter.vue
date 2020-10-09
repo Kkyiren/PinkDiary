@@ -38,7 +38,7 @@ export default {
         {
           imgUrl: Community,
           text: "社区",
-          url: "/mall"
+          url: "/community"
         },
         {
           imgUrl: Shop,
@@ -47,8 +47,8 @@ export default {
         },
         {
           imgUrl: Mine,
-          text: "我的",
-          url: "/mall"
+          text: "我的"
+          // url: "/mall"
         }
       ],
       isactive: 0

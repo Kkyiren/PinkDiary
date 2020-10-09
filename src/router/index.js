@@ -50,6 +50,28 @@ const routes = [
   {
     path: "/shop",
     component: () => import("../views/Shop.vue")
+  },
+  {
+    path: "/community",
+    component: () => import("../views/Community.vue"),
+    children: [
+      {
+        path: "/community",
+        redirect: "/hot"
+      },
+      {
+        path: "/hot",
+        component: () => import("../components/community/Hot.vue")
+      },
+      {
+        path: "/project",
+        component: () => import("../components/community/Project.vue")
+      },
+      {
+        path: "/answer",
+        component: () => import("../components/community/Answer.vue")
+      }
+    ]
   }
 ];
 

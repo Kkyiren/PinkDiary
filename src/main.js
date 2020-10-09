@@ -19,7 +19,8 @@ import {
   Tabs,
   CellGroup,
   Sidebar,
-  SidebarItem
+  SidebarItem,
+  Search
 } from "vant";
 
 Vue.use(Popup);
@@ -49,6 +50,8 @@ Vue.use(Calendar);
 Vue.use(Overlay);
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
+// import Vant from "vant";
+Vue.use(Search);
 
 import "vant/lib/index.css";
 
