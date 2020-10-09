@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 
 // import Vant from "vant";
+// import Vant from "vant";
 
 import { Popup } from "vant";
 
