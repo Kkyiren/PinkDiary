@@ -5,9 +5,13 @@ import store from "./store";
 
 // import Vant from "vant";
 
-import { Popup } from "vant";
-
+import { Popup, Search, GridItem, Grid, Image as VanImage } from "vant";
 Vue.use(Popup);
+Vue.use(Search);
+Vue.use(Grid);
+Vue.use(GridItem);
+Vue.use(VanImage);
+
 
 import "vant/lib/index.css";
 
@@ -20,7 +24,7 @@ import "amfe-flexible";
 Vue.config.productionTip = true;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount("#app");
