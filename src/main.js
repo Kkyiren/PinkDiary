@@ -11,12 +11,17 @@ import "./assets/stylus/reset.stylus";
 
 import "amfe-flexible";
 
+import { Sidebar, SidebarItem } from 'vant';
+
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
+
 // Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount("#app");
