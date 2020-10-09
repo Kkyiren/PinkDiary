@@ -1,11 +1,7 @@
 <template>
   <div class="footer">
     <ul>
-      <li
-        v-for="(item, index) in imgList"
-        :key="index"
-        @click="change(item, index)"
-      >
+      <li v-for="(item, index) in imgList" :key="index" @click="change(index)">
         <router-link :to="item.path">
           <div class="footer-icon" :class="{ alone: index == 1 }">
             <img :src="item.imgUrl" alt="" v-show="num != index" />
@@ -63,9 +59,10 @@ export default {
     };
   },
   methods: {
-    change(it, i) {
+    change(i) {
       this.num = i;
-      this.$router.push(it.path);
+      console.log(i);
+      // this.$router.push(it.path);
     }
   }
 };
