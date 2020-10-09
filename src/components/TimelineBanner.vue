@@ -230,7 +230,22 @@ export default {
   }
 };
 </script>
-<style lang="stylus" scoped>
+<style lang="stylus">
+.van-cell__right-icon {
+  display: none;
+}
+
+.van-cell--clickable {
+  background: transparent;
+}
+
+.van-cell__value--alone {
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 14px;
+}
+
 .timeline-banner {
   width: 100%;
   height: 400px;

@@ -20,11 +20,12 @@ import {
   CellGroup,
   Sidebar,
   SidebarItem,
-  Search
+  Search,
+  Cell
 } from "vant";
 
 Vue.use(Popup);
-// Vue.use(Cell);
+Vue.use(Cell);
 Vue.use(Popup);
 Vue.use(NavBar);
 // Vue.use(Cell);
