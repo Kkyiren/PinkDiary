@@ -58,7 +58,6 @@ export default {
 };
 </script>
 
-
 <style lang="stylus" scoped>
 .centent {
   padding: 0px 15px;

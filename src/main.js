@@ -3,25 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// import Vant from "vant";
-
-<<<<<<< HEAD
-import { Popup, NavBar, Cell, CellGroup } from "vant";
-Vue.use(Popup);
-<<<<<<< HEAD
-Vue.use(NavBar);
-Vue.use(Cell);
-Vue.use(CellGroup);
-
-
-
-
-=======
-// Vue.use(Cell);
-
 // 以下来自yjz
-=======
->>>>>>> master
 import {
   Popup,
   NavBar,
@@ -34,12 +16,16 @@ import {
   Grid,
   GridItem,
   Tab,
-  Tabs
+  Tabs,
+  CellGroup
 } from "vant";
 
 Vue.use(Popup);
 // Vue.use(Cell);
-
+Vue.use(Popup);
+Vue.use(NavBar);
+// Vue.use(Cell);
+Vue.use(CellGroup);
 // 以下来自yjz
 Vue.use(NavBar);
 // index头部标题按钮
@@ -55,15 +41,11 @@ Vue.use(Tab);
 Vue.use(Tabs);
 // tab标签页
 // 以上来自yjz
-<<<<<<< HEAD
->>>>>>> master
-=======
 Vue.use(NavBar);
 Vue.use(Icon);
 Vue.use(Calendar);
 Vue.use(Overlay);
 
->>>>>>> master
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
@@ -77,7 +59,7 @@ import "amfe-flexible";
 Vue.config.productionTip = true;
 
 new Vue({
-    router,
-    store,
-    render: h => h(App)
+  router,
+  store,
+  render: h => h(App)
 }).$mount("#app");

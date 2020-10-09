@@ -80,8 +80,6 @@ export default {
   }
 };
 </script>
-<style >
-</style>
 <style lang="stylus" scoped>
 .main {
   position: absolute;

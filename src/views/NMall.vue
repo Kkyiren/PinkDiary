@@ -32,8 +32,6 @@ export default {
   }
 };
 </script>
-<style lang="">
-</style>
 <style lang="stylus" scoped>
 .main-bg {
   background: #fbf7f8;
