@@ -28,7 +28,11 @@
         <h6>{{ arr[i] }}</h6>
         <img src="../assets/images/粉粉-商店_slices/手机banner.png" alt />
         <ul class="main-content">
-          <li v-for="(item, index) in classifyList" :key="index">
+          <li
+            v-for="(item, index) in classifyList"
+            :key="index"
+            v-show="item.type == type"
+          >
             <img :src="item.imgUrl" alt />
             <span>{{ item.title }}</span>
           </li>
@@ -57,7 +61,6 @@ export default {
         "图书音像",
         "家用电器",
         "家具器材",
-        "图书音像",
         "居家生活",
         "医药百货",
         "进口食品"
@@ -67,7 +70,7 @@ export default {
   },
   computed: {
     classifyList() {
-      // console.log(11);
+      // console.log(this.$store.state.classifyList);
       return this.$store.state.classifyList;
     }
   },
@@ -146,6 +149,7 @@ main {
   position: fixed;
   top: 101px;
   left: 0;
+  bottom: 0;
   background: #fff;
   display: flex;
   z-index: 120;
@@ -170,6 +174,7 @@ main {
   .article {
     flex: 1;
     flex-wrap: wrap;
+    overflow-y: auto;
     align-content: flex-start;
     padding: 10px 15px 0 10px;
 
