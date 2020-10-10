@@ -1,126 +1,36 @@
 <template>
   <div class="shop">
-    <!-- <rounter-view></rounter-view> -->
     <header>
       <div class="top">
         <div class="left">
-          <img src="../assets/images/粉粉-商店_slices/返回.png" alt="" />
+          <img src="../assets/images/粉粉-商店_slices/返回.png" alt />
         </div>
         <div class="center">商店</div>
         <div class="right">
-          <img src="../assets/images/粉粉-商店_slices/分享图标.png" alt="" />
-          <img src="../assets/images/粉粉-商店_slices/拍照图标.png" alt="" />
+          <img src="../assets/images/粉粉-商店_slices/分享图标.png" alt />
+          <img src="../assets/images/粉粉-商店_slices/拍照图标.png" alt />
         </div>
       </div>
       <input type="text" class="bottom" placeholder="搜索宝贝" />
-      <!-- <van-search
-            v-model="value"
-            placeholder="搜索宝贝"
-            input-align="center"
-            shape="round"
-            background="#FFB6D6"
-            /> -->
     </header>
     <main>
-      <van-sidebar v-model="activeKey" @change="onChange">
-        <van-sidebar-item title="热门推荐" />
-        <van-sidebar-item title="潮流女装" />
-        <van-sidebar-item title="潮流男装" />
-        <van-sidebar-item title="母婴健康" />
-        <van-sidebar-item title="内衣配饰" />
-        <van-sidebar-item title="电脑办公" />
-        <van-sidebar-item title="手机数码" />
-        <van-sidebar-item title="图书音像" />
-        <van-sidebar-item title="家用电器" />
-        <van-sidebar-item title="家具器材" />
-        <van-sidebar-item title="居家生活" />
-        <van-sidebar-item title="医药百货" />
-        <van-sidebar-item title="进口食品" />
+      <!-- 侧边导航 -->
+      <van-sidebar v-model="activeKey" @change="change">
+        <van-sidebar-item
+          v-for="(item, index) in arr"
+          :key="index"
+          :title="item"
+          @click="handleClick(index)"
+        />
       </van-sidebar>
+      <!-- 点击侧边导航会切换的内容 -->
       <div class="article">
-        <h6>热门推荐</h6>
-        <img src="../assets/images/粉粉-商店_slices/手机banner.png" alt="" />
-        <ul>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/图层 2.png" alt="" />
-            <p>华为</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/智能手环.png" alt="" />
-            <p>智能手环</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/单反相机图.png"
-              alt=""
-            />
-            <p>单反相机</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/创意手环图.png"
-              alt=""
-            />
-            <p>创意手环</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/小米耳机图.png"
-              alt=""
-            />
-            <p>小米耳机</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/DV摄像机图.png"
-              alt=""
-            />
-            <p>DV摄像机</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/照相机图.png" alt="" />
-            <p>照相机</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/魔音耳机图.png"
-              alt=""
-            />
-            <p>魔音耳机</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/vivo图.png" alt="" />
-            <p>vivo手机</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/图.png" alt="" />
-            <p>音箱</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/充电器图.png" alt="" />
-            <p>充电器</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/创意手环图.png"
-              alt=""
-            />
-            <p>智能手环</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/话筒.png" alt="" />
-            <p>话筒</p>
-          </li>
-          <li>
-            <img src="../assets/images/粉粉-商店_slices/U盘.png" alt="" />
-            <p>U盘</p>
-          </li>
-          <li>
-            <img
-              src="../assets/images/粉粉-商店_slices/图层 3 拷贝.png"
-              alt=""
-            />
-            <p>移动硬盘</p>
+        <h6>{{ arr[i] }}</h6>
+        <img src="../assets/images/粉粉-商店_slices/手机banner.png" alt />
+        <ul class="main-content">
+          <li v-for="(item, index) in classifyList" :key="index">
+            <img :src="item.imgUrl" alt />
+            <span>{{ item.title }}</span>
           </li>
         </ul>
       </div>
@@ -133,11 +43,52 @@ export default {
   data() {
     return {
       value: "",
-      activeKey: ""
+      activeKey: sessionStorage.getItem("activeKey") || 0,
+      type: sessionStorage.getItem("type") || 1,
+      arr: [
+        "热门推荐",
+        "尿不湿",
+        "潮流女装",
+        "潮流男装",
+        "母婴健康",
+        "内衣配饰",
+        "电脑办公",
+        "手机数码",
+        "图书音像",
+        "家用电器",
+        "家具器材",
+        "图书音像",
+        "居家生活",
+        "医药百货",
+        "进口食品"
+      ], // 侧边导航的title
+      i: 0
     };
   },
+  computed: {
+    classifyList() {
+      // console.log(11);
+      return this.$store.state.classifyList;
+    }
+  },
+  mounted() {
+    this.$store.dispatch("getClassifyList", {
+      type: this.type
+    });
+  },
   methods: {
-    onChange() {}
+    // 点击侧边导航切换商品
+    change(index) {
+      this.type = index + 1 + "";
+      sessionStorage.setItem("activeKey", this.activeKey);
+      sessionStorage.setItem("type", this.type);
+      this.$store.dispatch("getClassifyList", {
+        type: this.type
+      });
+    },
+    handleClick(index) {
+      this.i = index;
+    }
   }
 };
 </script>
@@ -195,11 +146,20 @@ main {
   position: fixed;
   top: 101px;
   left: 0;
-  // right 0
-  // bottom 0
   background: #fff;
   display: flex;
   z-index: 120;
+
+  .van-sidebar-item {
+    margin-bottom: 1px;
+    background-color: #E8E8E8;
+    text-align: center;
+  }
+
+  .van-sidebar-item--select {
+    background-color: #fff;
+    color: #ff6c8c;
+  }
 
   .van-sidebar-item--select::before {
     width: 4px;
@@ -211,7 +171,6 @@ main {
     flex: 1;
     flex-wrap: wrap;
     align-content: flex-start;
-    // background #0f0
     padding: 10px 15px 0 10px;
 
     h6 {
@@ -226,7 +185,7 @@ main {
       margin-bottom: 10px;
     }
 
-    ul {
+    .main-content {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
@@ -246,10 +205,16 @@ main {
           height: 50px;
         }
 
-        p {
+        span {
+          width: 70px;
+          text-align: center;
+          margin-top: 10px;
           font-size: 12px;
           font-weight: bold;
           color: #525252;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
       }
     }
