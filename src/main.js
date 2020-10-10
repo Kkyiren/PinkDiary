@@ -21,11 +21,8 @@ import {
   Sidebar,
   SidebarItem,
   Search,
-<<<<<<< HEAD
-  Toast
-=======
+  Toast,
   Cell
->>>>>>> master
 } from "vant";
 
 Vue.use(Popup);

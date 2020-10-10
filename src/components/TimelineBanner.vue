@@ -52,7 +52,12 @@
     </div>
     <!-- 领取更多粉币 -->
     <van-cell is-link @click="showPopup" class="layout">领取更多粉币</van-cell>
-    <van-popup v-model="show" position="bottom" :style="{ height: '70%' }" class="layout-content">
+    <van-popup
+      v-model="show"
+      position="bottom"
+      :style="{ height: '70%' }"
+      class="layout-content"
+    >
       <div class="layout-top">
         <div class="title">
           <span>领取更多粉币</span>
@@ -71,7 +76,11 @@
           <div class="signed-body">
             <div class="line"></div>
             <div class="wrap">
-              <div class="record" v-for="(item, index) in dateList" :key="index">
+              <div
+                class="record"
+                v-for="(item, index) in dateList"
+                :key="index"
+              >
                 <img src="../assets/img/pink-morecoin/coin.png" alt />
                 <span>{{ item }}</span>
               </div>
@@ -91,7 +100,11 @@
       <div class="task-body">
         <div class="newbie-task task">
           <div class="title">新手任务</div>
-          <div class="task-list" v-for="(ite, ind) in newbieTaskList" :key="ind">
+          <div
+            class="task-list"
+            v-for="(ite, ind) in newbieTaskList"
+            :key="ind"
+          >
             <div class="list-icon">
               <img :src="ite.img" alt />
             </div>
@@ -217,9 +230,6 @@ export default {
   }
 };
 </script>
-<<<<<<< HEAD
-<style lang="stylus" scoped>
-=======
 <style lang="stylus">
 .van-cell__right-icon {
   display: none;
@@ -236,7 +246,6 @@ export default {
   font-size: 14px;
 }
 
->>>>>>> master
 .timeline-banner {
   width: 100%;
   height: 400px;
@@ -381,10 +390,6 @@ export default {
 
     .content {
       width: 54px;
-<<<<<<< HEAD
-      // padding-right 4px
-=======
->>>>>>> master
       display: flex;
       flex-direction: column;
       justify-content: center;
