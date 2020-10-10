@@ -1,0 +1,76 @@
+.index-swipe
+  width 100%
+  img
+    width 100%
+    height 100%
+// 轮播图
+.van-grid
+  background-color #fbf7f8
+  padding 5px 0 20px 0
+  margin-top -8px
+  font-size 12px
+  .van-grid-item
+    margin-top 10px
+    .van-grid-item__content
+      background-color #fbf7f8
+  img
+    width 90%
+  p
+    margin-top 5px
+// grid宫格
+.van-tabs
+  div
+    .van-sticky
+      border-bottom 1px solid #f4f4f4
+      .van-tabs__wrap
+        .van-tabs__nav
+          .van-tab
+            font-size 20px
+            font-weight 700
+          .van-tabs__line
+            width 120px
+            height 6px
+            background-color #ff6ea5
+            border-radius 3px
+  .van-tabs__content
+    .van-tab__pane
+      background-color #fbf7f8
+      .mode
+        width 100%
+        padding 30px 15px 0 15px
+        margin-bottom 15px
+        background-color #ffffff
+        display flex
+        flex-direction column
+        align-items flex-start
+        h3
+          font-size 18px
+          font-weight 600
+        .logo
+          margin 25px 0 6px 0
+          display flex
+          align-items center
+          img
+            height 30px
+          span
+            font-size 16px
+            margin-left 5px
+            color #ec889b
+        > img
+          width 100%
+        .title
+          width 100%
+          color #727272
+          font-size 14px
+          margin-top 10px
+          text-overflow ellipsis
+          overflow hidden
+          white-space nowrap
+        .people
+          display flex
+          font-size 12px
+          margin 10px 0
+          color #a9a9a9
+          span, p
+            margin-right 10px
+// 内容版块

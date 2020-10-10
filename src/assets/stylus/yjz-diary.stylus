@@ -1,0 +1,91 @@
+.diary-body
+  .diary-head
+    width 100%
+    height 170px
+    background-image url("../img/yjz-diary/banner.png")
+    .diary-nav
+      padding 15px
+      display flex
+      justify-content space-between
+      font-size 22px
+      color #ffffff
+      .title
+        margin-left 10%
+        font-weight 400
+      img
+        height 22px
+      .nav-right
+        img
+          margin-left 10px
+    .diary-add
+      width 100%
+      padding 5px 15px
+      display flex
+      align-items center
+      .add
+        width 64px
+        margin-right 15px
+        display flex
+        flex-direction column
+        align-items center
+        img
+          width 100%
+        .add-name
+          margin-top 10px
+          font-size 12px
+          color #ffffff
+  .diary-main
+    background-color #fbf7f8
+    padding 15px
+    display flex
+    flex-direction column
+    .main-mode
+      width 100%
+      border-radius 5px
+      padding 5px
+      margin-top 15px
+      background-color #ffffff
+      display flex
+      justify-content space-between
+      .mode-left
+        display flex
+        flex-direction column
+        img
+          width 10px
+          margin-bottom 10px
+      .mode-center
+        width 100%
+        padding 8px 10px 0 10px
+        display flex
+        flex-direction column
+        .center-time
+          font-size 12px
+          color #b6b6b6
+          margin-bottom 15px
+        .center-name
+          font-size 16px
+          font-weight 600
+          margin-bottom 8px
+        .center-title
+          font-size 14px
+          font-weight 500
+          margin-bottom 8px
+        .center-address
+          color #b6b6b6
+          font-size 12px
+          img
+            height 12px
+      .mode-right
+        padding-top 8px
+        img
+          width 35px
+    .main-write
+      width 100%
+      display flex
+      justify-content flex-end
+      margin-top 10px
+      padding-right 20px
+      img
+        width 80px
+
+
