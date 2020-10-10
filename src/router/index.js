@@ -72,6 +72,14 @@ const routes = [
         component: () => import("../components/community/Answer.vue")
       }
     ]
+  },
+  {
+    path: "/hotnovel",
+    component: () => import("../views/HotNovel.vue")
+  },
+  {
+    path: "*",
+    component: () => import("../views/NotFound.vue")
   }
 ];
 
