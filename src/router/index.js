@@ -95,8 +95,4 @@ const router = new VueRouter({
   routes
 })
 
-<<<<<<< HEAD
-export default router
-=======
 export default router;
->>>>>>> master

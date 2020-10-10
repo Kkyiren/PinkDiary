@@ -21,7 +21,14 @@ import {
   Sidebar,
   SidebarItem,
   Search,
-  Cell
+  Cell,
+  Tabbar,
+  TabbarItem,
+  Progress,
+  Radio,
+  RadioGroup,
+  Field,
+  Button
 } from "vant";
 
 Vue.use(Popup);
@@ -53,6 +60,13 @@ Vue.use(Sidebar);
 Vue.use(SidebarItem);
 // import Vant from "vant";
 Vue.use(Search);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(Field);
+Vue.use(Button);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(Progress);
 
 import "vant/lib/index.css";
 
@@ -65,24 +79,8 @@ import "./assets/stylus/yjz-diary.stylus";
 //yjj-stylus样式
 import "./assets/stylus/yjj-hotnovel.stylus";
 //搜索
-Vue.use(Search);
 
 import "amfe-flexible";
-
-import { Tabbar, TabbarItem, NavBar, Progress, Grid, GridItem, Cell, CellGroup, Radio, RadioGroup, Field, Button } from 'vant';
-
-Vue.use(Tabbar);
-Vue.use(TabbarItem);
-Vue.use(NavBar);
-Vue.use(Progress);
-Vue.use(Grid);
-Vue.use(GridItem);
-Vue.use(Cell);
-Vue.use(CellGroup);
-Vue.use(Radio);
-Vue.use(RadioGroup);
-Vue.use(Field);
-Vue.use(Button);
 
 Vue.config.productionTip = true;
 

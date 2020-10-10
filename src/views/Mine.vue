@@ -66,7 +66,7 @@
         >
         <span
           ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>草稿箱</i
-          ><a href="javascript:;">></a></span
+          ><i></i> <a href="javascript:;">></a></span
         >
       </div>
     </div>
@@ -84,12 +84,11 @@ export default {};
 
 .box {
   width: 350px;
-  height: 250px;
   background: #fff;
   margin: 0 auto;
   position: relative;
   border-radius: 10px;
-  z-index: 999;
+  z-index: 100;
 }
 
 .via {
