@@ -2,7 +2,7 @@
   <div>
     <van-nav-bar title="我的" class="nav-bar" />
     <div class="box">
-      <img src="../assets/img/tou.jpg" alt="" class="via" />
+      <img src="../assets/img/chenhaibin/tou.jpg" alt="" class="via" />
       <span class="name">笑</span
       ><span class="authentication">还未认证达人</span>
       <van-progress inactive :percentage="0" pivot-text class="ProgressBars" />
@@ -39,33 +39,33 @@
       </van-grid>
       <div class="box-2">
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>KFC订餐</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>KFC订餐</i
           ><a href="javascript:;">></a></span
         >
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>我的消息</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>我的消息</i
           ><a href="javascript:;">></a></span
         >
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>我的礼券</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>我的礼券</i
           ><a href="javascript:;">></a></span
         >
       </div>
       <div class="box-3">
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>我的发布</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>我的发布</i
           ><a href="javascript:;">></a></span
         >
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>我的喜欢</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>我的喜欢</i
           ><a href="javascript:;">></a></span
         >
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>我的评论</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>我的评论</i
           ><a href="javascript:;">></a></span
         >
         <span
-          ><img src="../assets/img/38.jpg" alt="" /><i>草稿箱</i
+          ><img src="../assets/img/chenhaibin/38.jpg" alt="" /><i>草稿箱</i
           ><a href="javascript:;">></a></span
         >
       </div>
