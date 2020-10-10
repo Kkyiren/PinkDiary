@@ -9,15 +9,15 @@
     <main>
       <ul>
         <li v-for="(item, index) in list" :key="index">
-          <img class="big" :src="item.url" alt="" />
-          <h3>信纸屋</h3>
-          <p v-if="item.gold">
+          <img class="big" :src="item.avatarImg" alt="" />
+          <h3>{{item.title}}</h3>
+          <p v-if="item.glod">
             <img
               class="gold"
               src="../../assets/img/pink-mall/mingold@2x.png"
               alt=""
             />
-            <span>{{ item.gold }}</span>
+            <span>{{ item.glod }}</span>
             /
 
             <img
@@ -27,7 +27,7 @@
             />
             <span>{{ item.zuan }}</span>
           </p>
-          <p v-if="item.gold == 0">免费</p>
+          <p v-if="item.glod==0">免费</p>
         </li>
       </ul>
     </main>
@@ -35,34 +35,25 @@
 </template>
 
 <script>
-import yao from "../../assets/img/pink-mall/yao@2x.png";
-import sun from "../../assets/img/pink-mall/sun@2x.png";
-import flowers from "../../assets/img/pink-mall/flowers@2x.png";
+import {mallLetter} from '../../utils/api.js'
 export default {
   data() {
     return {
       list: [
-        {
-          url: yao,
-          gold: 60,
-          zuan: 6,
-          title: "魔儿小妖"
-        },
-        {
-          url: sun,
-          gold: 60,
-          zuan: 6,
-          title: "晴朗"
-        },
-        {
-          url: flowers,
-          gold: 0,
-          zuan: 0,
-          title: "小花"
-        }
+       
       ]
     };
-  }
+  },
+  methods: {
+   async getData(){
+     let str = await mallLetter()
+     this.list= str.result
+     console.log(this.list);
+    }
+  },
+  mounted() {
+    this.getData()
+  },
 };
 </script>
 <style lang="stylus" scoped>
