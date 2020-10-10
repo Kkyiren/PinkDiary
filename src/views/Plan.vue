@@ -14,7 +14,7 @@
     </div>
     <van-cell title="重复" is-link value="不重复" />
     <van-cell title="提醒方式" is-link value="当天提醒" />
-    <van-radio-group v-model="radio">
+    <van-radio-group>
       <van-cell-group>
         <van-cell title="完成状况" clickable @click="radio = '1'">
           <template #right-icon>

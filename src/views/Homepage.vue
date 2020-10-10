@@ -4,10 +4,10 @@
       title="个人主页"
       left-text="<_<"
       right-text="📖"
-      @click-left="onClickLeft"
-      @click-right="onClickRight"
       class="nav-bar"
     />
+    <!-- @click-left="onClickLeft"
+    @click-right="onClickRight" -->
     <div class="box-1">
       <img src="../assets/img/chenhaibin/tou.jpg" alt="" class="img-2" />
       <h4>笑</h4>
@@ -17,13 +17,11 @@
       <span class="name-1">暂无签名</span>
       <van-cell-group class="cell-group">
         <van-field
-          v-model="value"
           label="ID号"
           placeholder="请输入ID号"
           style="font-size:16px"
         />
         <van-field
-          v-model="value"
           label="昵称"
           placeholder="请输入昵称"
           style="font-size:16px"
