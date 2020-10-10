@@ -22,7 +22,6 @@ import {
   SidebarItem
 } from "vant";
 
-Vue.use(Popup);
 // Vue.use(Cell);
 Vue.use(Popup);
 Vue.use(NavBar);

@@ -3,7 +3,7 @@
     <!-- 头部 -->
     <van-nav-bar>
       <template #left>
-        <div class="left">
+        <div class="left" @click="back">
           <img src="../assets/img/pink-09/arrows.png" alt="" />
           <img src="../assets/img/pink-09/orthogon.png" alt="" />
           <img src="../assets/img/pink-09/arrows.png" alt="" />
@@ -74,7 +74,8 @@
             </div>
           </li>
 
-          <div class="detail-add">
+          
+          <div class="detail-add" @click="add">
             <img src="../assets/img/pink-09/add.png" alt="" />
           </div>
         </ul>
@@ -84,62 +85,65 @@
 </template>
 
 <script>
-import url01 from "../assets/img/pink-09/gifts.png";
-import url02 from "../assets/img/pink-09/recreation.png";
-import url03 from "../assets/img/pink-09/traffic.png";
+// import url01 from "../assets/img/pink-09/gifts.png";
+// import url02 from "../assets/img/pink-09/recreation.png";
+// import url03 from "../assets/img/pink-09/traffic.png";
+
+import { mapState } from "vuex";
 
 export default {
   data() {
     return {
-      detailList: [
-        {
-          src: url01,
-          name: "礼金",
-          subtotal: "+30.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        },
-        {
-          src: url03,
-          name: "交通",
-          subtotal: "-169.00"
-        },
-        {
-          src: url01,
-          name: "礼金",
-          subtotal: "+120.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        },
-        {
-          src: url03,
-          name: "交通",
-          subtotal: "-169.00"
-        },
-        {
-          src: url01,
-          name: "礼金",
-          subtotal: "+120.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        }
-      ],
+      // detailList: [
+      //   {
+      //     src: url01,
+      //     name: "礼金",
+      //     subtotal: "+30.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   },
+      //   {
+      //     src: url03,
+      //     name: "交通",
+      //     subtotal: "-169.00"
+      //   },
+      //   {
+      //     src: url01,
+      //     name: "礼金",
+      //     subtotal: "+120.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   },
+      //   {
+      //     src: url03,
+      //     name: "交通",
+      //     subtotal: "-169.00"
+      //   },
+      //   {
+      //     src: url01,
+      //     name: "礼金",
+      //     subtotal: "+120.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   }
+      // ],
       expends: 0,
-      incomes: 0
+      incomes: 0,
+      show: false,
     };
   },
   computed: {
@@ -164,8 +168,27 @@ export default {
     //收支差额计算
     diff() {
       return (this.incomes - this.expends).toFixed(2);
+    },
+    // detailList(){
+    //   return this.$store.state.detailList
+    // },
+      ...mapState({
+      detailList: "detailList"
+    }),
+  },
+  methods: {
+    back(){
+      this.$router.go(-1)
+    },
+    showPopup() {
+      this.show = true;
+    },
+    add(){
+      this.$router.push("/tallyAdd")
     }
-  }
+  },
+  
+ 
 };
 </script>
 <style lang="stylus">

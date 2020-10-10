@@ -28,15 +28,19 @@ const routes = [
   // 沈万生对应的页面 TallyBook && MemorialDay && Constellation
   // 图片资源路径 /src/assets/img/pink-09
   {
-    path: "/tallyBook",
+    path: "/tallyBook",//记账本
     component: () => import("../components/TallyBook.vue")
   },
   {
-    path: "/memorialDay",
+    path: "/tallyAdd",//账本添加
+    component: () => import("../components/TallyAdd.vue")
+  },
+  {
+    path: "/memorialDay",//纪念日
     component: () => import("../components/MemorialDay.vue")
   },
   {
-    path: "/constellation",
+    path: "/constellation",//星座
     component: () => import("../components/Constellation.vue")
   },
   {

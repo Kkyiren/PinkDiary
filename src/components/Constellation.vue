@@ -3,9 +3,11 @@
     <!-- 头部 -->
     <van-nav-bar>
       <template #left>
-        <img src="../assets/img/pink-09/arrows.png" alt="" />
-        <img src="../assets/img/pink-09/orthogon.png" alt="" />
-        <img src="../assets/img/pink-09/arrows.png" alt="" />
+        <div @click="back">
+          <img src="../assets/img/pink-09/arrows.png" alt="" />
+          <img src="../assets/img/pink-09/orthogon.png" alt="" />
+          <img src="../assets/img/pink-09/arrows.png" alt="" />
+        </div>
       </template>
       <template #title>
         <span class="title">粉粉星座</span>
@@ -101,7 +103,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    back(){
+      this.$router.go(-1)
+    }
+  }
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -312,6 +320,7 @@ export default {};
       color: #FC6BEF;
       font-style: italic;
       font-weight: 400;
+      
 
       &:last-child {
         color: #2CE1CB;
@@ -322,10 +331,10 @@ export default {};
 
   .itm02 {
     span {
+      color red
       font-size: 13px;
       line-height: 30px;
     }
-
     p {
       font-size: 11px;
       line-height: 30px;
