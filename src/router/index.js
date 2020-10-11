@@ -1,12 +1,8 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-const originalPush = VueRouter.prototype.push;
-VueRouter.prototype.push = function push(location) {
-  return originalPush.call(this, location).catch(err => err);
-};
+Vue.use(VueRouter)
 
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -78,6 +74,18 @@ const routes = [
     component: () => import("../views/HotNovel.vue")
   },
   {
+    path: '/mine',
+    component: () => import('../views/Mine.vue')
+  },
+  {
+    path: '/plan',
+    component: () => import('../views/Plan.vue')
+  },
+  {
+    path: '/homepage',
+    component: () => import('../views/Homepage.vue')
+  },
+  {
     path: "*",
     component: () => import("../views/NotFound.vue")
   }
@@ -85,6 +93,6 @@ const routes = [
 
 const router = new VueRouter({
   routes
-});
+})
 
 export default router;
