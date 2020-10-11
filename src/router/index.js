@@ -77,6 +77,7 @@ const routes = [
     path: "/hotnovel",
     component: () => import("../views/HotNovel.vue")
   },
+  // 可萌街
   {
     path: '/shopping',
     component: () =>
