@@ -6,7 +6,7 @@ import { Toast } from "vant";
 
 // 创建axios实例，全局的配置
 var instance = axios.create({
-  baseURL: "https://www.fastmock.site/mock/4eac5e4965b9d828cfdb88386ac0e191/fenfen",
+  baseURL: "https://www.fastmock.site/mock/4eac5e4965b9d828cfdb88386ac0e191/fenfen/api",
   timeout: 10000
 });
 
