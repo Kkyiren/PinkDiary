@@ -21,6 +21,7 @@ import {
   Sidebar,
   SidebarItem,
   Search,
+  Toast,
   Cell
 } from "vant";
 
@@ -53,6 +54,7 @@ Vue.use(Sidebar);
 Vue.use(SidebarItem);
 // import Vant from "vant";
 Vue.use(Search);
+Vue.use(Toast);
 
 import "vant/lib/index.css";
 

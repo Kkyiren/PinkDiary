@@ -3,7 +3,7 @@
     <!-- 右侧我的粉币 -->
     <div class="pinkcoin">
       <div class="coinicon">
-        <img src="../assets/img/pink-02/coin.png" alt="" />
+        <img src="../assets/img/pink-02/coin.png" alt />
       </div>
 
       <div class="coinnum">
@@ -14,25 +14,25 @@
 
     <!-- 领取粉币的5个活动 -->
     <div class="img img-1">
-      <img src="../assets/img/pink-02/img-1.png" alt="" />
+      <img src="../assets/img/pink-02/img-1.png" alt />
     </div>
     <div class="img img-2">
-      <img src="../assets/img/pink-02/img-2.png" alt="" />
+      <img src="../assets/img/pink-02/img-2.png" alt />
     </div>
     <div class="img img-3">
-      <img src="../assets/img/pink-02/img-3.png" alt="" />
+      <img src="../assets/img/pink-02/img-3.png" alt />
     </div>
     <div class="img img-4">
-      <img src="../assets/img/pink-02/img-4.png" alt="" />
+      <img src="../assets/img/pink-02/img-4.png" alt />
     </div>
     <div class="img img-5">
-      <img src="../assets/img/pink-02/img-5.png" alt="" />
+      <img src="../assets/img/pink-02/img-5.png" alt />
     </div>
 
     <!-- 攻略 -->
     <div class="strategy">
       <div class="strategy-img">
-        <img src="../assets/img/pink-02/strategy.png" alt="" />
+        <img src="../assets/img/pink-02/strategy.png" alt />
       </div>
       <span>攻略</span>
     </div>
@@ -40,12 +40,12 @@
     <!-- 庄园物语 -->
     <div class="manor">
       <div class="manor-img">
-        <img src="../assets/img/pink-02/basket.png" alt="" />
+        <img src="../assets/img/pink-02/basket.png" alt />
       </div>
       <div class="content">
         <span>庄园物语</span>
         <div>
-          <img src="../assets/img/pink-02/red-packet.png" alt="" />
+          <img src="../assets/img/pink-02/red-packet.png" alt />
           <span>种菜收现金红包</span>
         </div>
       </div>
@@ -61,7 +61,7 @@
       <div class="layout-top">
         <div class="title">
           <span>领取更多粉币</span>
-          <img src="../assets/img/pink-02/getmore.png" alt="" />
+          <img src="../assets/img/pink-02/getmore.png" alt />
         </div>
         <div class="signed">
           <div class="signed-top">
@@ -81,7 +81,7 @@
                 v-for="(item, index) in dateList"
                 :key="index"
               >
-                <img src="../assets/img/pink-morecoin/coin.png" alt="" />
+                <img src="../assets/img/pink-morecoin/coin.png" alt />
                 <span>{{ item }}</span>
               </div>
             </div>
@@ -106,12 +106,12 @@
             :key="ind"
           >
             <div class="list-icon">
-              <img :src="ite.img" alt="" />
+              <img :src="ite.img" alt />
             </div>
             <div class="list-info">
               <h3 class="task-title">{{ ite.task }}</h3>
               <div class="task-reward">
-                <img src="../assets/img/pink-morecoin/reward.png" alt="" />
+                <img src="../assets/img/pink-morecoin/reward.png" alt />
                 <span v-if="ite.reward">{{ ite.reward }}&nbsp;粉币</span>
                 <span v-else>每消费&nbsp;1&nbsp;粉钻奖励&nbsp;1&nbsp;粉币</span>
               </div>
@@ -129,12 +129,12 @@
           <div class="title">每日任务</div>
           <div class="task-list" v-for="(it, inn) in dailyTaskList" :key="inn">
             <div class="list-icon">
-              <img :src="it.img" alt="" />
+              <img :src="it.img" alt />
             </div>
             <div class="list-info">
               <h3 class="task-title">{{ it.task }}</h3>
               <div class="task-reward">
-                <img src="../assets/img/pink-morecoin/reward.png" alt="" />
+                <img src="../assets/img/pink-morecoin/reward.png" alt />
                 <span v-if="it.reward">{{ it.reward }}&nbsp;粉币</span>
                 <span v-else>每消费&nbsp;1&nbsp;粉钻奖励&nbsp;1&nbsp;粉币</span>
               </div>
