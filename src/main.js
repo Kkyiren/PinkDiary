@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import './assets/font/iconfont.css';
+
 // 以下来自yjz
 import {
   Popup,

@@ -73,6 +73,48 @@ const routes = [
     path: "/hotnovel",
     component: () => import("../views/HotNovel.vue")
   },
+  // 可萌街
+  {
+    path: '/shopping',
+    component: () =>
+      import('../views/shopping.vue'),
+    children: [
+      {
+        path: '/shopping',
+        redirect: '/choose'
+      },
+      {
+        path: '/choose',
+        component: () =>
+          import('../components/jin/choose.vue')
+      },
+      {
+        path: '/Electrical',
+        component: () =>
+          import('../components/jin/Electrical.vue')
+      },
+      {
+        path: '/phone',
+        component: () =>
+          import('../components/jin/phone.vue')
+      },
+      {
+        path: '/close',
+        component: () =>
+          import('../components/jin/close.vue')
+      },
+      {
+        path: '/Computer',
+        component: () =>
+          import('../components/jin/Computer.vue')
+      },
+      {
+        path: '/beauty',
+        component: () =>
+          import('../components/jin/beauty.vue')
+      }
+    ]
+  },
   {
     path: '/mine',
     component: () => import('../views/Mine.vue')
