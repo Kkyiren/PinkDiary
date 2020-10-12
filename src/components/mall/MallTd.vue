@@ -20,7 +20,6 @@
           />
           <span>60</span>
           /
-
           <img
             class="min"
             src="../../assets/img/pink-mall/zuanshi@2x.png"
