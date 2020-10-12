@@ -175,7 +175,7 @@
 		justify-content space-between
 		// align-items center
 		.left
-			width: 105px;
+			width: 90px;
 			// background red
 			img 
 				display block
@@ -186,6 +186,10 @@
 				font-weight: bold;
 				color: #000000;
 				margin-top: 9px
+				text-overflow: ellipsis
+				overflow hidden
+				white-space nowrap
+	
 			
 			span
 				display: block

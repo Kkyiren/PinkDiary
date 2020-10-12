@@ -20,3 +20,9 @@ export function mallLetter(a) {
     return obj
 
 }
+
+//热门小说
+export function hotNovel(params) {
+    let obj = http.get('/hotnovel', params)
+    return obj
+}

@@ -57,7 +57,7 @@
         <img src="../assets/img/yjz-index/庄园物语.png" />
         <p>庄园物语</p>
       </van-grid-item>
-      <van-grid-item>
+      <van-grid-item to="/hotnovel">
         <img src="../assets/img/yjz-index/热门小说.png" />
         <p>热门小说</p>
       </van-grid-item>
@@ -146,20 +146,28 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.index-body
-  header
-    width 100%
-    height 50px
-    background-color #ffb6d6
-    color #ffffff
-    font-size 20px
-    display flex
-    justify-content space-between
-    align-items center
-    h2
-      font-weight 400
-    a
-      margin 0 15px
-      img
-        height 28px
+.index-body {
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #ffb6d6;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: 400;
+    }
+
+    a {
+      margin: 0 15px;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+}
 </style>
