@@ -1,145 +1,150 @@
 <template>
-  <div class="tallyBook">
-    <!-- 头部 -->
-    <van-nav-bar>
-      <template #left>
-        <div class="left">
-          <img src="../assets/img/pink-09/arrows.png" alt="" />
-          <img src="../assets/img/pink-09/orthogon.png" alt="" />
-          <img src="../assets/img/pink-09/arrows.png" alt="" />
-        </div>
-      </template>
-      <template #title>
-        <div class="title">
-          <span>2020</span>年<span>5</span>月
-          <img src="../assets/img/pink-09/pull-down.png" alt="" />
-        </div>
-      </template>
-      <template #right>
-        <img src="../assets/img/pink-09/time.png" alt="" />
-      </template>
-    </van-nav-bar>
-
-    <!-- 预算 -->
-    <section class="budget">
-      <div class="budget-set">
-        设置预算
-      </div>
-      <div class="budget-content">
-        <ul>
-          <li>
-            <span>{{ income }}</span>
-            <i>收入(元)</i>
-          </li>
-          <li>
-            <span>-{{ expend }}</span>
-            <i>支出(元)</i>
-          </li>
-          <li>
-            <span>{{ diff }}</span>
-            <i>收支差额(元)</i>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 支出 收入详情 -->
-    <main class="detail">
-      <div class="detail-hd">
-        <div class="date">
-          <span>5月21日</span>
-          <span>星期四</span>
-        </div>
-        <div class="total">
-          支出:<span>{{ expend }}</span
-          >，收入:<span>{{ income }}</span>
-        </div>
-      </div>
-      <div class="detail-body">
-        <ul class="detail-list">
-          <li
-            class="detail-item"
-            v-for="(item, index) in detailList"
-            :key="index"
-          >
-            <div class="item-title">
-              <img :src="item.src" alt="" />
-              <span>{{ item.name }}</span>
-            </div>
-            <div
-              class="subtotal"
-              :class="{ active: parseInt(item.subtotal) < 0 }"
-            >
-              <span>{{ item.subtotal }}</span>
-            </div>
-          </li>
-
-          <div class="detail-add">
-            <img src="../assets/img/pink-09/add.png" alt="" />
+  <keep-alive>
+    <div class="tallyBook">
+      <!-- 头部 -->
+      <van-nav-bar>
+        <template #left>
+          <div class="left" @click="back">
+            <img src="../assets/img/pink-09/arrows.png" alt="" />
+            <img src="../assets/img/pink-09/orthogon.png" alt="" />
+            <img src="../assets/img/pink-09/arrows.png" alt="" />
           </div>
-        </ul>
-      </div>
-    </main>
-  </div>
+        </template>
+        <template #title>
+          <div class="title">
+            <span>2020</span>年<span>5</span>月
+            <img src="../assets/img/pink-09/pull-down.png" alt="" />
+          </div>
+        </template>
+        <template #right>
+          <img src="../assets/img/pink-09/time.png" alt="" />
+        </template>
+      </van-nav-bar>
+
+      <!-- 预算 -->
+      <section class="budget">
+        <div class="budget-set">
+          设置预算
+        </div>
+        <div class="budget-content">
+          <ul>
+            <li>
+              <span>{{ income }}</span>
+              <i>收入(元)</i>
+            </li>
+            <li>
+              <span>-{{ expend }}</span>
+              <i>支出(元)</i>
+            </li>
+            <li>
+              <span>{{ diff }}</span>
+              <i>收支差额(元)</i>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 支出 收入详情 -->
+      <main class="detail">
+        <div class="detail-hd">
+          <div class="date">
+            <span>5月21日</span>
+            <span>星期四</span>
+          </div>
+          <div class="total">
+            支出:<span>{{ expend }}</span
+            >，收入:<span>{{ income }}</span>
+          </div>
+        </div>
+        <div class="detail-body">
+          <ul class="detail-list">
+            <li
+              class="detail-item"
+              v-for="(item, index) in detailList"
+              :key="index"
+            >
+              <div class="item-title">
+                <img :src="item.src" alt="" />
+                <span>{{ item.name }}</span>
+              </div>
+              <div
+                class="subtotal"
+                :class="{ active: parseInt(item.subtotal) < 0 }"
+              >
+                <span>{{ item.subtotal }}</span>
+              </div>
+            </li>
+
+            <div class="detail-add" @click="add">
+              <img src="../assets/img/pink-09/add.png" alt="" />
+            </div>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </keep-alive>
 </template>
 
 <script>
-import url01 from "../assets/img/pink-09/gifts.png";
-import url02 from "../assets/img/pink-09/recreation.png";
-import url03 from "../assets/img/pink-09/traffic.png";
+// import url01 from "../assets/img/pink-09/gifts.png";
+// import url02 from "../assets/img/pink-09/recreation.png";
+// import url03 from "../assets/img/pink-09/traffic.png";
+
+import { mapState } from "vuex";
 
 export default {
   data() {
     return {
-      detailList: [
-        {
-          src: url01,
-          name: "礼金",
-          subtotal: "+30.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        },
-        {
-          src: url03,
-          name: "交通",
-          subtotal: "-169.00"
-        },
-        {
-          src: url01,
-          name: "礼金",
-          subtotal: "+120.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        },
-        {
-          src: url03,
-          name: "交通",
-          subtotal: "-169.00"
-        },
-        {
-          src: url01,
-          name: "礼金",
-          subtotal: "+120.00"
-        },
-        {
-          src: url02,
-          name: "娱乐",
-          subtotal: "-15.00"
-        }
-      ],
+      // detailList: [
+      //   {
+      //     src: url01,
+      //     name: "礼金",
+      //     subtotal: "+30.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   },
+      //   {
+      //     src: url03,
+      //     name: "交通",
+      //     subtotal: "-169.00"
+      //   },
+      //   {
+      //     src: url01,
+      //     name: "礼金",
+      //     subtotal: "+120.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   },
+      //   {
+      //     src: url03,
+      //     name: "交通",
+      //     subtotal: "-169.00"
+      //   },
+      //   {
+      //     src: url01,
+      //     name: "礼金",
+      //     subtotal: "+120.00"
+      //   },
+      //   {
+      //     src: url02,
+      //     name: "娱乐",
+      //     subtotal: "-15.00"
+      //   }
+      // ],
       expends: 0,
-      incomes: 0
+      incomes: 0,
+      show: false
     };
   },
   computed: {
@@ -164,6 +169,23 @@ export default {
     //收支差额计算
     diff() {
       return (this.incomes - this.expends).toFixed(2);
+    },
+    // detailList(){
+    //   return this.$store.state.detailList
+    // },
+    ...mapState({
+      detailList: "detailList"
+    })
+  },
+  methods: {
+    back() {
+      this.$router.go(-1);
+    },
+    showPopup() {
+      this.show = true;
+    },
+    add() {
+      this.$router.push("/tallyAdd");
     }
   }
 };
