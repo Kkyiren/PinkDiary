@@ -19,10 +19,13 @@ import {
   Tabs,
   CellGroup,
   Sidebar,
-  SidebarItem
+  SidebarItem,
+  Search,
+  Cell
 } from "vant";
 
-// Vue.use(Cell);
+Vue.use(Popup);
+Vue.use(Cell);
 Vue.use(Popup);
 Vue.use(NavBar);
 // Vue.use(Cell);
@@ -48,6 +51,8 @@ Vue.use(Calendar);
 Vue.use(Overlay);
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
+// import Vant from "vant";
+Vue.use(Search);
 
 import "vant/lib/index.css";
 
@@ -56,6 +61,11 @@ import "./assets/stylus/reset.stylus";
 import "./assets/stylus/yjz-index.stylus";
 import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
+
+//yjj-stylus样式
+import "./assets/stylus/yjj-hotnovel.stylus";
+//搜索
+Vue.use(Search);
 
 import "amfe-flexible";
 

@@ -11,7 +11,8 @@
       <template #title>
         <div class="title">
            <!-- 收入 | 支出 -->
-           <span>收入</span><span>支出</span>
+           <span :class="{active:isActive}" @click="toIncome">收入</span>
+           <span :class="{active:!isActive}" @click="toExpend">支出</span>
         </div>
       </template>
       <template #right>
@@ -30,7 +31,6 @@
       </div>
       <div>
         <span>类别</span>
-        <!-- <input type="text" v-model="tallyClass"> -->
         <select v-model="tallyClass">
           <option value="交通">交通</option>
           <option value="娱乐">娱乐</option>
@@ -45,6 +45,7 @@
 import url01 from "../assets/img/pink-09/gifts.png";
 import url02 from "../assets/img/pink-09/recreation.png";
 import url03 from "../assets/img/pink-09/traffic.png";
+import url04 from "../assets/img/pink-09/icon_love.png";
 
 export default {
   data(){
@@ -52,7 +53,9 @@ export default {
       price:"",
       count:"",
       tallyClass:"交通",
-      url:""
+      url:"",
+      direction: 1,  //0代表支出，1代表收入
+      isActive:true,
     }
   },
   methods:{
@@ -73,15 +76,27 @@ export default {
       }else if(this.tallyClass=="交通"){
         this.url = url03;
       }else{
-        this.url = url01;
+        this.url = url04;
       }
 
+      let count = this.count == "" ? 1 : this.count;
+ 
       this.$store.commit('getDetailList',{
           src: this.url,
           name: this.tallyClass=="" ? "其他" : this.tallyClass,
-          subtotal: "+" + this.price
+          subtotal: `${this.direction == 0 ? "-" : "+" }${(this.price * count).toFixed(2)}`,
         },);
       this.$router.go(-1)
+    },
+    //收入
+    toIncome(){
+      this.isActive = true;
+      this.direction = 1;
+    },
+    //支出
+    toExpend(){
+      this.isActive = false;
+      this.direction = 0;
     }
   }
 }
@@ -117,13 +132,16 @@ export default {
       &:first-child {
         border-top-left-radius 6px
         border-bottom-left-radius 6px
-        background #fff
-        color red
       }
       &:last-child {
         border-top-right-radius 6px
         border-bottom-right-radius 6px
       }
+      
+    }
+    .active {
+      background #fff
+      color red
     }
       
   }
