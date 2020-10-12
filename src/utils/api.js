@@ -17,3 +17,13 @@ export function mallLetter(a) {
   let obj = http.get("/mall/letter", a);
   return obj;
 }
+//首页
+export function indexImages(a) {
+  let obj = http.get("/index", a);
+  return obj;
+}
+//日记
+export function diary(a) {
+  let obj = http.get("/diary", a);
+  return obj;
+}
