@@ -27,3 +27,8 @@ export function diary(a) {
   let obj = http.get("/diary", a);
   return obj;
 }
+//热门小说
+export function hotNovel(params) {
+  let obj = http.get("/hotnovel", params);
+  return obj;
+}

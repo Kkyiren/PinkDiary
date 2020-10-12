@@ -17,4 +17,7 @@ export default {
   }
 };
 </script>
+<<<<<<< HEAD
 <style lang="scss" scoped></style>
+=======
+>>>>>>> master

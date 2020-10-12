@@ -84,20 +84,28 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.index-body
-  header
-    width 100%
-    height 50px
-    background-color #ffb6d6
-    color #ffffff
-    font-size 20px
-    display flex
-    justify-content space-between
-    align-items center
-    h2
-      font-weight 400
-    a
-      margin 0 15px
-      img
-        height 28px
+.index-body {
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #ffb6d6;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: 400;
+    }
+
+    a {
+      margin: 0 15px;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+}
 </style>
