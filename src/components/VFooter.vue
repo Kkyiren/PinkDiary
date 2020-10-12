@@ -43,11 +43,7 @@ export default {
           imgUrl1: TimeLine1,
           imgUrl: TimeLine,
           text: "时间线",
-<<<<<<< HEAD
-          path:"/index"
-=======
           path: "/index"
->>>>>>> master
         },
         { imgUrl1: Planet1, imgUrl: Planet, text: "宝藏星球", path: "/planet" },
         {
