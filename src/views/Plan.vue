@@ -25,8 +25,6 @@
     </van-radio-group>
   </div>
 </template>
-<script>
-</script>
 <style lang="stylus" scoped>
 .nav-bar {
   background: pink;
