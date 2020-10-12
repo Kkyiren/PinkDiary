@@ -1,11 +1,19 @@
 <template>
   <div class="memorialDay">
-    <van-nav-bar title="纪念日" left-arrow>
+    <van-nav-bar title="纪念日">
+      <template #left>
+        <div class="left" @click="back">
+          <img src="../assets/img/pink-09/arrows.png" alt="" />
+          <img src="../assets/img/pink-09/orthogon.png" alt="" />
+          <img src="../assets/img/pink-09/arrows.png" alt="" />
+        </div>
+      </template>
       <template #right>
         <van-icon class="search" name="search" size="18" />
         <van-icon name="ellipsis" size="18" />
       </template>
     </van-nav-bar>
+
 
     <main>
       <ul class="day-list">
@@ -77,7 +85,13 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    back(){
+      this.$router.go(-1)
+    }
+  }
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -95,6 +109,18 @@ export default {};
   background: #FFB5D5;
   color: #fff !important;
 
+  .left {
+    img {
+      width: 8px;
+      height: 12px;
+
+      &:nth-child(2) {
+        width: 10px;
+        height: 4px;
+        margin-top: 10px;
+      }
+    }
+  }
   .van-icon {
     color: #fff;
 
@@ -189,3 +215,4 @@ export default {};
   }
 }
 </style>
+    
