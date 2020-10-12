@@ -44,11 +44,12 @@
     </van-grid>
   </div>
 </template>
-<style lang="stylus" scoped>
+<style lang="stylus">
 .communitylist
   margin 15px 0px
   .van-grid-item
     border none
+    background-color white !important
     img
       width 49px
       height 49px

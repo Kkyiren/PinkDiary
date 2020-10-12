@@ -8,11 +8,10 @@ import url01 from "../assets/img/pink-09/gifts.png";
 import url02 from "../assets/img/pink-09/recreation.png";
 import url03 from "../assets/img/pink-09/traffic.png";
 
-
 export default new Vuex.Store({
   state: {
     classifyList: [],
-    detailList:[
+    detailList: [
       {
         src: url03,
         name: "交通",
@@ -34,10 +33,10 @@ export default new Vuex.Store({
     getClassifyList1(state, payload) {
       state.classifyList = payload.result;
     },
-    getDetailList(state,payload){
-      state.detailList.push(payload)  
-      console.log(this.state.detailList)
-    },
+    getDetailList(state, payload) {
+      state.detailList.push(payload);
+      // console.log(this.state.detailList);
+    }
   },
   actions: {
     async getClassifyList({ commit }, payload) {

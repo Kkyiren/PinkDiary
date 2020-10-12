@@ -14,7 +14,6 @@
       </template>
     </van-nav-bar>
 
-
     <main>
       <ul class="day-list">
         <li class="item">
@@ -87,8 +86,8 @@
 <script>
 export default {
   methods: {
-    back(){
-      this.$router.go(-1)
+    back() {
+      this.$router.go(-1);
     }
   }
 };
@@ -215,4 +214,3 @@ export default {
   }
 }
 </style>
-    

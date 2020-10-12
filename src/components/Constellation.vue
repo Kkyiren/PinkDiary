@@ -105,8 +105,8 @@
 <script>
 export default {
   methods: {
-    back(){
-      this.$router.go(-1)
+    back() {
+      this.$router.go(-1);
     }
   }
 };
@@ -303,8 +303,6 @@ export default {
       color: #FC6BEF;
       font-style: italic;
       font-weight: 400;
-      
-
       &:last-child {
         color: #2CE1CB;
         margin-top: 5px;

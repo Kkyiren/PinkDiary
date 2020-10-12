@@ -75,7 +75,6 @@
               </div>
             </li>
 
-            
             <div class="detail-add" @click="add">
               <img src="../assets/img/pink-09/add.png" alt="" />
             </div>
@@ -145,7 +144,7 @@ export default {
       // ],
       expends: 0,
       incomes: 0,
-      show: false,
+      show: false
     };
   },
   computed: {
@@ -174,23 +173,21 @@ export default {
     // detailList(){
     //   return this.$store.state.detailList
     // },
-      ...mapState({
+    ...mapState({
       detailList: "detailList"
-    }),
+    })
   },
   methods: {
-    back(){
-      this.$router.go(-1)
+    back() {
+      this.$router.go(-1);
     },
     showPopup() {
       this.show = true;
     },
-    add(){
-      this.$router.push("/tallyAdd")
+    add() {
+      this.$router.push("/tallyAdd");
     }
-  },
-  
- 
+  }
 };
 </script>
 <style lang="stylus">
