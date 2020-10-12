@@ -17,3 +17,9 @@ export function mallLetter(a) {
   let obj = http.get("/mall/letter", a);
   return obj;
 }
+
+//热门小说
+export function hotNovel(params) {
+  let obj = http.get("/hotnovel", params);
+  return obj;
+}
