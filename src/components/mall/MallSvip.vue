@@ -15,7 +15,7 @@
     <main>
       <ul>
         <li v-for="(item, index) in list" :key="index">
-          <img :src="item.url" alt="" />
+          <img :src="item.avatarImg" alt="" />
           <div class="title">{{ item.title }}</div>
           <p>SVIP尊享</p>
         </li>
@@ -28,32 +28,23 @@
 </template>
 
 <script>
-import heart from "../../assets/img/pink-mall/heart@2x.png";
-import state from "../../assets/img/pink-mall/state@2x.png";
-import lovely from "../../assets/img/pink-mall/lovely@2x.png";
-import dog from "../../assets/img/pink-mall/dog@2x.png";
+import { mallVipnone } from "../../utils/api.js";
+
 export default {
   data() {
     return {
-      list: [
-        {
-          url: heart,
-          title: "信纸｜neonheart"
-        },
-        {
-          url: state,
-          title: "信纸｜星空梦"
-        },
-        {
-          url: lovely,
-          title: "信纸｜懂帝没有丁丁"
-        },
-        {
-          url: dog,
-          title: "信纸｜有一只狗东西"
-        }
-      ]
+      list: []
     };
+  },
+  methods: {
+    async getData() {
+      let str = await mallVipnone();
+      this.list = str.data.result;
+      console.log(str);
+    }
+  },
+  mounted() {
+    this.getData();
   }
 };
 </script>
