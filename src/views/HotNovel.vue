@@ -164,4 +164,35 @@
     </div>
   </div>
 </template>
+
+<script>
+//引入axios请求数据方式
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      // novelList: []
+    };
+  },
+  mounted() {
+    this.getHotNovelList();
+  },
+  methods: {
+    getHotNovelList() {
+      axios
+        .get(
+          "https://www.fastmock.site/mock/4eac5e4965b9d828cfdb88386ac0e191/fenfen/api/hotnovel"
+        )
+        .then(res => {
+          // this.novelList = res.data.result.list;
+          console.log(this.getHotNovelList);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+  }
+};
+</script>
 <style lang="stylus" scoped></style>
