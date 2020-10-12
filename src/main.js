@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import './assets/font/iconfont.css';
+
 // 以下来自yjz
 import {
   Popup,
@@ -20,11 +22,20 @@ import {
   CellGroup,
   Sidebar,
   SidebarItem,
-  Search
+  Search,
+  Toast,
+  Cell,
+  Tabbar,
+  TabbarItem,
+  Progress,
+  Radio,
+  RadioGroup,
+  Field,
+  Button
 } from "vant";
 
 Vue.use(Popup);
-// Vue.use(Cell);
+Vue.use(Cell);
 Vue.use(Popup);
 Vue.use(NavBar);
 // Vue.use(Cell);
@@ -52,6 +63,14 @@ Vue.use(Sidebar);
 Vue.use(SidebarItem);
 // import Vant from "vant";
 Vue.use(Search);
+Vue.use(Toast);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(Field);
+Vue.use(Button);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(Progress);
 
 import "vant/lib/index.css";
 
@@ -61,9 +80,11 @@ import "./assets/stylus/yjz-index.stylus";
 import "./assets/stylus/yjz-diary.stylus";
 // yjz-stylus样式
 
-import "amfe-flexible";
+//yjj-stylus样式
+import "./assets/stylus/yjj-hotnovel.stylus";
+//搜索
 
-// Vue.use(Vant);
+import "amfe-flexible";
 
 Vue.config.productionTip = true;
 
