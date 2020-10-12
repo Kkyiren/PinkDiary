@@ -38,7 +38,7 @@ export default {
         { imgUrl1:TimeLine1,
           imgUrl: TimeLine,
           text: "时间线",
-          path:"/time"
+          path:"/index"
         },
         { imgUrl1:Planet1,
           imgUrl: Planet,
