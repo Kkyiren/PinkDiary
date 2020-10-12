@@ -3,152 +3,166 @@
     <div>
       <div class="header">
         <!-- 宽高背景图 -->
-        <div class="back"><img src="../assets/img/nvwangka/fanhui.png" alt=""></div>
-        <div class="nvwangka"><img src="../assets/img/nvwangka/女王卡组.png" alt=""></div>
+        <div class="back">
+          <img src="../assets/img/nvwangka/fanhui.png" alt="" />
+        </div>
+        <div class="nvwangka">
+          <img src="../assets/img/nvwangka/女王卡组.png" alt="" />
+        </div>
       </div>
       <div class="main-top">
         <div class="bt">
-          <img src="../assets/img/nvwangka/组 1.png" alt="">
+          <img src="../assets/img/nvwangka/组 1.png" alt="" />
           <span>尊享特权</span>
         </div>
         <div class="smalltubox">
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/礼盒.png" alt="">
+            <img src="../assets/img/nvwangka/礼盒.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/人物图标.png" alt="">
+            <img src="../assets/img/nvwangka/人物图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/APP图标.png" alt="">
+            <img src="../assets/img/nvwangka/APP图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
         </div>
         <div class="smalltubox">
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
         </div>
         <div class="smalltubox">
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
           <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="">
+            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
             <h3>云同步流量</h3>
             <p>享20G超大流量</p>
           </div>
         </div>
-
       </div>
       <div class="main-banner">
         <!-- 宽高背景图按钮 -->
         <span>会员权益</span>
-        <div class="huoqv"><img src="../assets/img/nvwangka/huoqv.png" alt=""></div>
+        <div class="huoqv">
+          <img src="../assets/img/nvwangka/huoqv.png" alt="" />
+        </div>
         <div class="main-main">
           <div class="qyimgbox">
-            <img src="../assets/img/nvwangka/积分兑换.png" alt="">
-            <img src="../assets/img/nvwangka/加速升级.png" alt="">
-            <img src="../assets/img/nvwangka/精品素材.png" alt="">
+            <img src="../assets/img/nvwangka/积分兑换.png" alt="" />
+            <img src="../assets/img/nvwangka/加速升级.png" alt="" />
+            <img src="../assets/img/nvwangka/精品素材.png" alt="" />
           </div>
           <div class="qyimgbox">
-            <img src="../assets/img/nvwangka/酷炫来源.png" alt="">
-            <img src="../assets/img/nvwangka/取关通知.png" alt="">
-            <img src="../assets/img/nvwangka/专属vip.png" alt="">
+            <img src="../assets/img/nvwangka/酷炫来源.png" alt="" />
+            <img src="../assets/img/nvwangka/取关通知.png" alt="" />
+            <img src="../assets/img/nvwangka/专属vip.png" alt="" />
           </div>
           <div class="qyimgbox">
-            <img src="../assets/img/nvwangka/专属客服.png" alt="">
-            <img src="../assets/img/nvwangka/专属滤镜.png" alt="">
-            <img src="../assets/img/nvwangka/动态置顶.png" alt="">
+            <img src="../assets/img/nvwangka/专属客服.png" alt="" />
+            <img src="../assets/img/nvwangka/专属滤镜.png" alt="" />
+            <img src="../assets/img/nvwangka/动态置顶.png" alt="" />
           </div>
         </div>
       </div>
     </div>
     <div class="main-bottom">
       <div class="bt">
-        <img src="../assets/img/nvwangka/组 1.png" alt="">
+        <img src="../assets/img/nvwangka/组 1.png" alt="" />
         <span>特权升级</span>
-        <div class="jjsx"><img src="../assets/img/nvwangka/jb1.png" alt=""><span>即将上线</span></div>
+        <div class="jjsx">
+          <img src="../assets/img/nvwangka/jb1.png" alt="" /><span
+            >即将上线</span
+          >
+        </div>
       </div>
       <div class="yy">
         <div class="sjimgbox">
-          <img src="../assets/img/nvwangka/KFC.png" alt="">
-          <img src="../assets/img/nvwangka/淘票票.png" alt="">
+          <img src="../assets/img/nvwangka/KFC.png" alt="" />
+          <img src="../assets/img/nvwangka/淘票票.png" alt="" />
         </div>
         <div class="sjimgbox">
-          <img src="../assets/img/nvwangka/星巴克.png" alt="">
-          <img src="../assets/img/nvwangka/必胜客.png" alt="">
+          <img src="../assets/img/nvwangka/星巴克.png" alt="" />
+          <img src="../assets/img/nvwangka/必胜客.png" alt="" />
         </div>
       </div>
     </div>
     <h4>购买有问题?</h4>
     <div class="xian"></div>
     <div class="bottom">
-      <img src="../assets/img/nvwangka/tan.png" alt="">
+      <img src="../assets/img/nvwangka/tan.png" alt="" />
       <p>
         <span style="color:#696969">成为会员即表示同意</span>
         <span style="color:#F991B8">《粉粉日记会员协议》《隐私政策》</span>
       </p>
-
     </div>
     <div class="kaitong">
-      <img src="../assets/img/nvwangka/kt.png" alt="">
+      <img src="../assets/img/nvwangka/kt.png" alt="" />
       <div class="jg">
         <span style="font-size:18px">年卡</span>
         <span style="font-size:12px">￥</span>
         <span style="font-size:27px">108</span>
-        <span style="font-size:12px;
-text-decoration: line-through;">￥144</span>
+        <span
+          style="font-size:12px;
+text-decoration: line-through;"
+          >￥144</span
+        >
       </div>
       <span style="font-weight: bold;">立即开通</span>
-      <div class="b1"><img src="../assets/img/nvwangka/kt2.png" alt=""><span>送腾讯视频月会员</span></div>
-      <div class="b2"><img src="../assets/img/nvwangka/kt3.png" alt=""><span>~0.29/天</span></div>
+      <div class="b1">
+        <img src="../assets/img/nvwangka/kt2.png" alt="" /><span
+          >送腾讯视频月会员</span
+        >
+      </div>
+      <div class="b2">
+        <img src="../assets/img/nvwangka/kt3.png" alt="" /><span>~0.29/天</span>
+      </div>
     </div>
-    
   </div>
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
 <style>
 .header {
