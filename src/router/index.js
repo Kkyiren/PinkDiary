@@ -32,6 +32,10 @@ const routes = [
     component: () => import("../components/TallyBook.vue")
   },
   {
+    path: "/tallyAdd",//账本添加
+    component: () => import("../components/TallyAdd.vue")
+  },
+  {
     path: "/memorialDay",
     component: () => import("../components/MemorialDay.vue")
   },

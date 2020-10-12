@@ -33,7 +33,7 @@
         <img src="../assets/img/yjz-index/手账.png" />
         <p>手账</p>
       </van-grid-item>
-      <van-grid-item>
+      <van-grid-item @click="tallyBook">
         <img src="../assets/img/yjz-index/记账本.png" />
         <p>记账本</p>
       </van-grid-item>
@@ -41,11 +41,11 @@
         <img src="../assets/img/yjz-index/计划表.png" />
         <p>计划表</p>
       </van-grid-item>
-      <van-grid-item>
+      <van-grid-item @click="memorialDay">
         <img src="../assets/img/yjz-index/纪念日.png" />
         <p>纪念日</p>
       </van-grid-item>
-      <van-grid-item>
+      <van-grid-item @click="constellation">
         <img src="../assets/img/yjz-index/星座.png" />
         <p>星座</p>
       </van-grid-item>
@@ -141,6 +141,17 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    tallyBook() {
+      this.$router.push("/tallyBook");
+    },
+    memorialDay() {
+      this.$router.push("/memorialDay");
+    },
+    constellation() {
+      this.$router.push("/constellation");
+    }
   }
 };
 </script>
