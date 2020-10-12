@@ -1,11 +1,11 @@
 <template>
   <div>
     <van-nav-bar title="Smile" left-text=">_<" right-text="***" left-arrow />
-    <div class="banner"><img src="../assets/img/tykimg/21.png" alt=""></div>
-    <div class="main"><img src="../assets/img/tykimg/-s-beijing.png" alt=""></div>
-    <div class="footer">
-      
+    <div class="banner"><img src="../assets/img/tykimg/21.png" alt="" /></div>
+    <div class="main">
+      <img src="../assets/img/tykimg/-s-beijing.png" alt="" />
     </div>
+    <div class="footer"></div>
   </div>
 </template>
 <style lang="stylus">

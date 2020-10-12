@@ -2,24 +2,22 @@
   <div>
     <van-nav-bar title="手账" left-text=">_<" right-text="***" left-arrow />
     <div class="banner">
-      <img src="../assets/img/tykimg/banner1.png" alt="">
-      <img src="../assets/img/tykimg/banner2.png" alt="">
+      <img src="../assets/img/tykimg/banner1.png" alt="" />
+      <img src="../assets/img/tykimg/banner2.png" alt="" />
     </div>
     <div class="main">
-      <img src="../assets/img/tykimg/main1.png" alt="">
-      <img src="../assets/img/tykimg/main2.png" alt="">
-
+      <img src="../assets/img/tykimg/main1.png" alt="" />
+      <img src="../assets/img/tykimg/main2.png" alt="" />
     </div>
     <div class="main2">
-      <img src="../assets/img/tykimg/main3.png" alt="">
+      <img src="../assets/img/tykimg/main3.png" alt="" />
     </div>
     <div class="jia">
-      <img src="../assets/img/tykimg/JIA.png" alt="">
+      <img src="../assets/img/tykimg/JIA.png" alt="" />
     </div>
-
   </div>
 </template>
-<style  lang="stylus">
+<style lang="stylus">
 .van-nav-bar
   width 375px
   height 44px

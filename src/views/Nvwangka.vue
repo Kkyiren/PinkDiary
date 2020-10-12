@@ -16,69 +16,45 @@
           <span>尊享特权</span>
         </div>
         <div class="smalltubox">
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/礼盒.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/人物图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/APP图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
+          <div
+            class="smalltu"
+            v-for="(item, index) in itemList"
+            :key="index"
+            v-show="index < 4"
+          >
+            <template v-if="index < 4">
+              <img :src="item.url" alt="" />
+              <h3>{{ item.sp1 }}</h3>
+              <p>{{ item.sp2 }}</p>
+            </template>
           </div>
         </div>
         <div class="smalltubox">
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
+          <div
+            class="smalltu"
+            v-for="(item, index) in itemList"
+            :key="index"
+            v-show="index > 3 && index < 8"
+          >
+            <template v-if="index > 3 && index < 8">
+              <img :src="item.url" alt="" />
+              <h3>{{ item.sp1 }}</h3>
+              <p>{{ item.sp2 }}</p>
+            </template>
           </div>
         </div>
         <div class="smalltubox">
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
-          </div>
-          <div class="smalltu">
-            <img src="../assets/img/nvwangka/云同步图标.png" alt="" />
-            <h3>云同步流量</h3>
-            <p>享20G超大流量</p>
+          <div
+            class="smalltu"
+            v-for="(item, index) in itemList"
+            :key="index"
+            v-show="index > 7 && index < 12"
+          >
+            <template v-if="index > 7 && index < 12">
+              <img :src="item.url" alt="" />
+              <h3>{{ item.sp1 }}</h3>
+              <p>{{ item.sp2 }}</p>
+            </template>
           </div>
         </div>
       </div>
@@ -90,19 +66,40 @@
         </div>
         <div class="main-main">
           <div class="qyimgbox">
-            <img src="../assets/img/nvwangka/积分兑换.png" alt="" />
-            <img src="../assets/img/nvwangka/加速升级.png" alt="" />
-            <img src="../assets/img/nvwangka/精品素材.png" alt="" />
+            <div
+              class="qyimg"
+              v-for="(item, index) in itemList2"
+              :key="index"
+              v-show="index <= 2"
+            >
+              <template v-if="index <= 2">
+                <img :src="item.url" alt="" />
+              </template>
+            </div>
           </div>
           <div class="qyimgbox">
-            <img src="../assets/img/nvwangka/酷炫来源.png" alt="" />
-            <img src="../assets/img/nvwangka/取关通知.png" alt="" />
-            <img src="../assets/img/nvwangka/专属vip.png" alt="" />
+            <div
+              class="qyimg"
+              v-for="(item, index) in itemList2"
+              :key="index"
+              v-show="index >= 3 && index <= 5"
+            >
+              <template v-if="index >= 3 && index <= 5">
+                <img :src="item.url" alt="" />
+              </template>
+            </div>
           </div>
           <div class="qyimgbox">
-            <img src="../assets/img/nvwangka/专属客服.png" alt="" />
-            <img src="../assets/img/nvwangka/专属滤镜.png" alt="" />
-            <img src="../assets/img/nvwangka/动态置顶.png" alt="" />
+            <div
+              class="qyimg"
+              v-for="(item, index) in itemList2"
+              :key="index"
+              v-show="index >= 6 && index <= 8"
+            >
+              <template v-if="index >= 6 && index <= 8">
+                <img :src="item.url" alt="" />
+              </template>
+            </div>
           </div>
         </div>
       </div>
@@ -119,12 +116,24 @@
       </div>
       <div class="yy">
         <div class="sjimgbox">
-          <img src="../assets/img/nvwangka/KFC.png" alt="" />
-          <img src="../assets/img/nvwangka/淘票票.png" alt="" />
+          <div
+            class="sjimg"
+            v-for="(item, index) in itemList3"
+            :key="index"
+            v-show="index <= 1"
+          >
+            <template v-if="index <= 1"><img :src="item.url" alt=""/></template>
+          </div>
         </div>
         <div class="sjimgbox">
-          <img src="../assets/img/nvwangka/星巴克.png" alt="" />
-          <img src="../assets/img/nvwangka/必胜客.png" alt="" />
+          <div
+            class="sjimg"
+            v-for="(item, index) in itemList3"
+            :key="index"
+            v-show="index >= 2"
+          >
+            <template v-if="index >= 2"><img :src="item.url" alt=""/></template>
+          </div>
         </div>
       </div>
     </div>
@@ -162,7 +171,30 @@ text-decoration: line-through;"
   </div>
 </template>
 <script>
-export default {};
+import { queenCard } from "../utils/api";
+export default {
+  data() {
+    return {
+      itemList: [],
+      itemList2: [],
+      itemList3: []
+    };
+  },
+  methods: {
+    async getqueenCard() {
+      const obj = await queenCard();
+      this.itemList = obj.data.itemList;
+      console.log(this.itemList);
+      this.itemList2 = obj.data.itemList2;
+      console.log(this.itemList2);
+      this.itemList3 = obj.data.itemList3;
+      console.log(this.itemList3);
+    }
+  },
+  mounted() {
+    this.getqueenCard();
+  }
+};
 </script>
 <style>
 .header {
@@ -190,7 +222,6 @@ export default {};
   width: 300px;
   height: 169px;
 }
-
 .main-top .bt > img {
   width: 4px;
   height: 24px;
@@ -219,23 +250,27 @@ export default {};
 .smalltu img {
   width: 53px;
   height: 53px;
-  margin: 0 7px;
+  margin: 0 12px;
 }
 .smalltu h3 {
-  width: 67px;
+  width: 78px;
   height: 13px;
   font-size: 13px;
   font-family: PingFang;
+  text-align: center;
   font-weight: bold;
   color: #000000;
 }
 .smalltu p {
-  width: 71px;
+  width: 81px;
   height: 10px;
   font-size: 10px;
   font-family: PingFang;
   font-weight: bold;
   color: #a7a7a7;
+  text-align: center;
+  margin: auto;
+  margin-top: 2px;
 }
 .main-banner {
   background-color: thistle;
@@ -278,11 +313,13 @@ export default {};
 .main-main .qyimgbox {
   display: flex;
 }
-.main-main .qyimgbox img {
-  width: 95px;
-  height: 118px;
+.main-main .qyimgbox .qyimg {
   margin: auto;
   margin-top: 16px;
+}
+.main-main .qyimgbox .qyimg img {
+  width: 95px;
+  height: 118px;
 }
 .main-bottom .bt > img {
   width: 4px;
@@ -327,11 +364,13 @@ export default {};
   display: flex;
   margin-left: 2px;
 }
-.sjimgbox img {
+.sjimgbox .sjimg img {
   margin-left: 13px;
+  margin-bottom: 15px;
+}
+.sjimgbox img {
   width: 151px;
   height: 69px;
-  margin-bottom: 15px;
 }
 .yy {
   width: 345px;
