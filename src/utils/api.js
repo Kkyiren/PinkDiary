@@ -20,6 +20,6 @@ export function mallLetter(a) {
 
 //热门小说
 export function hotNovel(params) {
-    let obj = http.get('/hotnovel', params)
-    return obj
+  let obj = http.get("/hotnovel", params);
+  return obj;
 }

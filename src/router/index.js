@@ -15,8 +15,7 @@ const routes = [
   },
   {
     path: "/index",
-    component: () => import("../views/Index.vue"),
-   
+    component: () => import("../views/Index.vue")
   },
   {
     path: "/planet",
