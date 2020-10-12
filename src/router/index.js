@@ -1,8 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
-
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -75,57 +74,50 @@ const routes = [
   },
   // 可萌街
   {
-    path: '/shopping',
-    component: () =>
-      import('../views/shopping.vue'),
+    path: "/shopping",
+    component: () => import("../views/shopping.vue"),
     children: [
       {
-        path: '/shopping',
-        redirect: '/choose'
+        path: "/shopping",
+        redirect: "/choose"
       },
       {
-        path: '/choose',
-        component: () =>
-          import('../components/jin/choose.vue')
+        path: "/choose",
+        component: () => import("../components/jin/choose.vue")
       },
       {
-        path: '/Electrical',
-        component: () =>
-          import('../components/jin/Electrical.vue')
+        path: "/Electrical",
+        component: () => import("../components/jin/Electrical.vue")
       },
       {
-        path: '/phone',
-        component: () =>
-          import('../components/jin/phone.vue')
+        path: "/phone",
+        component: () => import("../components/jin/phone.vue")
       },
       {
-        path: '/close',
-        component: () =>
-          import('../components/jin/close.vue')
+        path: "/close",
+        component: () => import("../components/jin/close.vue")
       },
       {
-        path: '/Computer',
-        component: () =>
-          import('../components/jin/Computer.vue')
+        path: "/Computer",
+        component: () => import("../components/jin/Computer.vue")
       },
       {
-        path: '/beauty',
-        component: () =>
-          import('../components/jin/beauty.vue')
+        path: "/beauty",
+        component: () => import("../components/jin/beauty.vue")
       }
     ]
   },
   {
-    path: '/mine',
-    component: () => import('../views/Mine.vue')
+    path: "/mine",
+    component: () => import("../views/Mine.vue")
   },
   {
-    path: '/plan',
-    component: () => import('../views/Plan.vue')
+    path: "/plan",
+    component: () => import("../views/Plan.vue")
   },
   {
-    path: '/homepage',
-    component: () => import('../views/Homepage.vue')
+    path: "/homepage",
+    component: () => import("../views/Homepage.vue")
   },
   {
     path: "*",
@@ -135,6 +127,6 @@ const routes = [
 
 const router = new VueRouter({
   routes
-})
+});
 
 export default router;
