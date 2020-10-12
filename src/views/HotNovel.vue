@@ -29,7 +29,7 @@
       <div class="search-top">
         <h5>男生</h5>
         <h5>女生</h5>
-        <van-search v-model="value" placeholder="阴阳鬼术是" shape="round" />
+        <van-search placeholder="阴阳鬼术是" shape="round" />
       </div>
       <div class="search-center">
         <div class="search-center-left">

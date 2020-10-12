@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3671924",
+      "name": "唯品会",
+      "font_class": "vips",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "8649584",
+      "name": "拼多多",
+      "font_class": "pinduoduo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "9532245",
+      "name": "京东",
+      "font_class": "jingdong",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "13670805",
+      "name": "我 的",
+      "font_class": "my",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    }
+  ]
+}

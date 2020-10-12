@@ -3,17 +3,15 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// import Vant from "vant";
-
-import { Popup } from "vant";
-
-Vue.use(Popup);
-
-// Vue.use(Cell);
+import './assets/font/iconfont.css';
 
 // 以下来自yjz
 import {
+  Popup,
   NavBar,
+  Icon,
+  Calendar,
+  Overlay,
   Image as VanImage,
   Swipe,
   SwipeItem,
@@ -21,8 +19,28 @@ import {
   GridItem,
   Tab,
   Tabs,
-  Search
+  CellGroup,
+  Sidebar,
+  SidebarItem,
+  Search,
+  Toast,
+  Cell,
+  Tabbar,
+  TabbarItem,
+  Progress,
+  Radio,
+  RadioGroup,
+  Field,
+  Button
 } from "vant";
+
+Vue.use(Popup);
+Vue.use(Cell);
+Vue.use(Popup);
+Vue.use(NavBar);
+// Vue.use(Cell);
+Vue.use(CellGroup);
+// 以下来自yjz
 Vue.use(NavBar);
 // index头部标题按钮
 Vue.use(VanImage);
@@ -37,6 +55,23 @@ Vue.use(Tab);
 Vue.use(Tabs);
 // tab标签页
 // 以上来自yjz
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Calendar);
+Vue.use(Overlay);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
+// import Vant from "vant";
+Vue.use(Search);
+Vue.use(Toast);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(Field);
+Vue.use(Button);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(Progress);
+
 import "vant/lib/index.css";
 
 import "./assets/stylus/reset.stylus";
@@ -48,11 +83,8 @@ import "./assets/stylus/yjz-diary.stylus";
 //yjj-stylus样式
 import "./assets/stylus/yjj-hotnovel.stylus";
 //搜索
-Vue.use(Search);
 
 import "amfe-flexible";
-
-// Vue.use(Vant);
 
 Vue.config.productionTip = true;
 
