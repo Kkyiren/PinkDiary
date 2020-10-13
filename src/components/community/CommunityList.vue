@@ -55,8 +55,13 @@
       height 49px
       margin-bottom 6px
     .van-span
-      font-size: 11px;
+      font-size: 12px;
       font-family: PingFang;
       font-weight: bold;
       color: #222222;
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      width 49px
+      text-align center
 </style>
