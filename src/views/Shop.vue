@@ -6,7 +6,7 @@
           <img
             src="../assets/images/粉粉-商店_slices/返回.png"
             alt
-            @click="back"
+            @click="clickBack"
           />
         </div>
         <div class="center">商店</div>
@@ -85,8 +85,8 @@ export default {
   },
   methods: {
     // 点击返回键返回到上一个页面
-    back() {
-      this.$rounter.go(-1);
+    clickBack() {
+      this.$router.go(-1);
     },
     // 点击侧边导航切换商品
     change(index) {

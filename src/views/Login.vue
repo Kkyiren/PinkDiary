@@ -15,7 +15,8 @@
     <main>
       <input type="text" placeholder="手机号/粉粉ID/账号名" />
       <div class="password">
-        <input type="text" placeholder="输入密码" />
+        <input type="password" placeholder="输入密码" v-if="show" />
+        <input type="text" placeholder="输入密码" v-else />
         <span @click="toShow">
           <img
             src="../assets/images/粉粉-商店_slices/yes_.jpg"
@@ -57,6 +58,7 @@
 export default {
   data() {
     return {
+      show: true,
       imgShow: true
     };
   },
@@ -127,15 +129,19 @@ export default {
       width: 375px;
       padding: 0 18px;
       background: #fff;
+      display: flex;
 
       input {
         padding: 0;
         border: 0;
+        display: block;
       }
 
-      img {
-        width: 21px;
-        height: 23px;
+      span {
+        img {
+          width: 21px;
+          height: 23px;
+        }
       }
     }
 
