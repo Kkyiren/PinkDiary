@@ -54,7 +54,7 @@
       width 49px
       height 49px
       margin-bottom 6px
-    .van-span 
+    .van-span
       font-size: 12px;
       font-family: PingFang;
       font-weight: bold;
