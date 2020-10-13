@@ -6,11 +6,15 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    classifyList: []
+    classifyList: [],
+    phone: ""
   },
   mutations: {
     getClassifyList1(state, payload) {
       state.classifyList = payload.result;
+    },
+    setPhone(state, payload) {
+      state.phone = payload
     }
   },
   actions: {

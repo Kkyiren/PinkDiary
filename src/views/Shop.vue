@@ -3,7 +3,11 @@
     <header>
       <div class="top">
         <div class="left">
-          <img src="../assets/images/粉粉-商店_slices/返回.png" alt />
+          <img
+            src="../assets/images/粉粉-商店_slices/返回.png"
+            alt
+            @click="back"
+          />
         </div>
         <div class="center">商店</div>
         <div class="right">
@@ -80,6 +84,10 @@ export default {
     });
   },
   methods: {
+    // 点击返回键返回到上一个页面
+    back() {
+      this.$rounter.go(-1);
+    },
     // 点击侧边导航切换商品
     change(index) {
       this.type = index + 1 + "";
