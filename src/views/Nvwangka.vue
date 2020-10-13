@@ -3,7 +3,7 @@
     <div>
       <div class="header">
         <!-- 宽高背景图 -->
-        <div class="back">
+        <div class="back" @click="back">
           <img src="../assets/img/nvwangka/fanhui.png" alt="" />
         </div>
         <div class="nvwangka">
@@ -189,6 +189,9 @@ export default {
       console.log(this.itemList2);
       this.itemList3 = obj.data.itemList3;
       console.log(this.itemList3);
+    },
+    back() {
+      this.$router.go(-1);
     }
   },
   mounted() {
