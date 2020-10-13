@@ -37,3 +37,13 @@ export function hotNovel(params) {
   let obj = http.get("/hotnovel", params);
   return obj;
 }
+//详情数据页
+export function getShopping(a) {
+  let obj = http.get("/add/shopping", a);
+  return obj;
+}
+// 我的页面数据
+export function getMine(a) {
+  let obj = http.get("/Mine", a);
+  return obj;
+}

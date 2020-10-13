@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { getClassify } from "../utils/api";
+import { getClassify, getMine } from "../utils/api";
 
 Vue.use(Vuex);
 
@@ -28,7 +28,8 @@ export default new Vuex.Store({
         name: "礼金",
         subtotal: "+30.00"
       }
-    ]
+    ],
+    mineList: []
   },
   mutations: {
     getClassifyList1(state, payload) {
@@ -39,7 +40,9 @@ export default new Vuex.Store({
     },
     getDetailList(state, payload) {
       state.detailList.push(payload);
-      // console.log(this.state.detailList);
+    },
+    MineList(state, payload) {
+      state.mineList = payload;
     }
   },
   actions: {
@@ -48,7 +51,11 @@ export default new Vuex.Store({
         type: payload.type
       });
       commit("getClassifyList1", res.data);
+    },
+    async getMineList({ commit }) {
+      const res = await getMine();
+      console.log(res.data);
+      commit("MineList", res.data);
     }
-  },
-  modules: {}
+  }
 });

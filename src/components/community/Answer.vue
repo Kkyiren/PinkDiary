@@ -97,7 +97,7 @@
   }
 
   img {
-    width: 340px;
+    width: 350px;
     height: 236px;
   }
 
