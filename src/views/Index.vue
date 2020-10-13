@@ -1,7 +1,7 @@
 <template>
   <div class="index-body">
     <header>
-      <a href="javascript:;">
+      <a href="javascript:;" @click="setup">
         <img src="../assets/img/yjz-index/left.png" alt="" />
       </a>
       <h2>粉粉日记</h2>
@@ -84,6 +84,9 @@ export default {
       this.bannerList = str.data.banner;
       this.girdList = str.data.grid;
       this.tabsList = str.data.tabs;
+    },
+    setup() {
+      this.$router.push("/setup");
     },
     login() {
       this.$router.push("/login");

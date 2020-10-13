@@ -5,7 +5,7 @@
         <div class="left">
           <img src="../assets/images/粉粉-商店_slices/返回.png" alt />
         </div>
-        <div class="center">商店</div>
+        <div class="center">更多分类</div>
         <div class="right">
           <img src="../assets/images/粉粉-商店_slices/分享图标.png" alt />
           <img src="../assets/images/粉粉-商店_slices/拍照图标.png" alt />

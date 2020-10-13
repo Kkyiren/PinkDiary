@@ -35,29 +35,35 @@ const routes = [
   },
   // 手账页（首页点grid宫格手账进入）
   {
-    path: "/tallyAdd", //账本添加
+    path: "/tallyAdd",
     component: () => import("../components/TallyAdd.vue")
   },
+  //账本添加（手账页点击加号进入）
   {
     path: "/memorialDay",
     component: () => import("../components/MemorialDay.vue")
   },
+  // 纪念日（首页点grid宫格纪念日进入）
   {
     path: "/constellation",
     component: () => import("../components/Constellation.vue")
   },
+  // 星座（首页点grid宫格星座进入）
   {
     path: "/mall",
     component: () => import("../views/NMall.vue")
   },
+  // 商城页
   {
     path: "/setup",
     component: () => import("../views/NSetup.vue")
   },
+  // 设置页
   {
     path: "/shop",
     component: () => import("../views/Shop.vue")
   },
+  // 更多（首页点grid宫格更多进入）
   {
     path: "/community",
     component: () => import("../views/Community.vue"),
@@ -80,11 +86,12 @@ const routes = [
       }
     ]
   },
+  // 社区页
   {
     path: "/hotnovel",
     component: () => import("../views/HotNovel.vue")
   },
-  // 可萌街
+  // 热门小说
   {
     path: "/shopping",
     component: () => import("../views/shopping.vue"),
@@ -119,18 +126,22 @@ const routes = [
       }
     ]
   },
+  // 购物（首页点grid宫格购物进入）
   {
     path: "/mine",
     component: () => import("../views/Mine.vue")
   },
+  // 我的页
   {
     path: "/plan",
     component: () => import("../views/Plan.vue")
   },
+  // 计划表（首页点grid宫格计划表进入）
   {
     path: "/homepage",
     component: () => import("../views/Homepage.vue")
   },
+  // 个人主页（我的页点个人主页进入）
   {
     path: "*",
     component: () => import("../views/NotFound.vue")
