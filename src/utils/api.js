@@ -17,6 +17,11 @@ export function mallLetter(a) {
   let obj = http.get("/mall/letter", a);
   return obj;
 }
+//女王卡
+export function queenCard(a) {
+  let obj = http.get("/queenCard", a);
+  return obj;
+}
 //首页
 export function indexImages(a) {
   let obj = http.get("/index", a);
