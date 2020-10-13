@@ -33,7 +33,7 @@
 }
 
 .box-1 {
-  background: #ccc;
+  background: #fbf7f8;
   padding: 10px 0;
 }
 

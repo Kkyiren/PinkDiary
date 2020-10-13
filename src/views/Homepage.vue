@@ -8,10 +8,10 @@
     />
     <!-- @click-left="onClickLeft"
     @click-right="onClickRight" -->
-    <div class="box-1">
-      <img src="../assets/img/chenhaibin/tou.jpg" alt="" class="img-2" />
-      <h4>笑</h4>
-      <h6>ID:26089227</h6>
+    <div class="box-1" v-for="(img, ind) in mineList.Imglist" :key="ind">
+      <img :src="img.img" alt="" class="img-2" />
+      <h4>{{ img.tit }}</h4>
+      <h6>ID:{{ img.num }}</h6>
     </div>
     <div class="box-2">
       <span class="name-1">暂无签名</span>
@@ -28,12 +28,25 @@
         />
       </van-cell-group>
       <van-cell title="二维码" is-link />
-      <van-button type="primary" block class="but">登录</van-button>
+      <van-button type="primary" block class="but" color="pink"
+        >登录</van-button
+      >
     </div>
   </div>
 </template>
 <script>
-export default {};
+import { mapState, mapActions } from "vuex";
+export default {
+  methods: {
+    ...mapActions(["getMineList"])
+  },
+  computed: {
+    ...mapState(["mineList"])
+  },
+  mounted() {
+    this.getMineList();
+  }
+};
 </script>
 <style lang="stylus" scoped>
 .nav-bar {
@@ -43,7 +56,7 @@ export default {};
 .box-1 {
   width: 100%;
   height: 250px;
-  background: url('../assets/img/chenhaibin/timg.jpg') no-repeat center;
+  background: url('../assets/img/chenhaibin/图层1.png') no-repeat center;
   position: relative;
 }
 
@@ -61,7 +74,7 @@ export default {};
   position: absolute;
   top: calc(50% + 50px);
   left: calc(50% - 15px);
-  color: red;
+  color: #fff;
 }
 
 .box-1 h6 {
