@@ -21,9 +21,22 @@ const routes = [
     path: "/planet",
     component: () => import("../views/Planet.vue")
   },
+  // 宝藏星球
   {
     path: "/diary",
     component: () => import("../views/Diary.vue")
+  },
+  {
+    path: "/riji",
+    component: () => import("../views/Riji.vue")
+  },
+  {
+    path: "/shouzhang",
+    component: () => import("../views/Shouzhang.vue")
+  },
+  {
+    path: "/nvwangka",
+    component: () => import("../views/Nvwangka.vue")
   },
   // 沈万生对应的页面 TallyBook && MemorialDay && Constellation
   // 图片资源路径 /src/assets/img/pink-09
@@ -31,26 +44,54 @@ const routes = [
     path: "/tallyBook",
     component: () => import("../components/TallyBook.vue")
   },
+  // 手账页（首页点grid宫格手账进入）
+  {
+    path: "/tallyAdd",
+    component: () => import("../components/TallyAdd.vue")
+  },
+  //账本添加（手账页点击加号进入）
   {
     path: "/memorialDay",
     component: () => import("../components/MemorialDay.vue")
   },
+  // 纪念日（首页点grid宫格纪念日进入）
   {
     path: "/constellation",
     component: () => import("../components/Constellation.vue")
   },
+  // 星座（首页点grid宫格星座进入）
   {
     path: "/mall",
     component: () => import("../views/NMall.vue")
   },
+  // 商城页
   {
     path: "/setup",
     component: () => import("../views/NSetup.vue")
   },
+  // 设置页
+  // 商店
   {
     path: "/shop",
     component: () => import("../views/Shop.vue")
   },
+  // 更多（首页点grid宫格更多进入）
+  // 登入
+  {
+    path: "/login",
+    component: () => import("../views/Login.vue")
+  },
+  // 注册
+  {
+    path: "/regeister",
+    component: () => import("../views/Login-regeister.vue")
+  },
+  // 提交注册-注册
+  {
+    path: "/next",
+    component: () => import("../views/Login-regeister-next.vue")
+  },
+
   {
     path: "/community",
     component: () => import("../views/Community.vue"),
@@ -73,11 +114,12 @@ const routes = [
       }
     ]
   },
+  // 社区页
   {
     path: "/hotnovel",
     component: () => import("../views/HotNovel.vue")
   },
-  // 可萌街
+  // 热门小说
   {
     path: "/shopping",
     component: () => import("../views/shopping.vue"),
@@ -112,18 +154,22 @@ const routes = [
       }
     ]
   },
+  // 购物（首页点grid宫格购物进入）
   {
     path: "/mine",
     component: () => import("../views/Mine.vue")
   },
+  // 我的页
   {
     path: "/plan",
     component: () => import("../views/Plan.vue")
   },
+  // 计划表（首页点grid宫格计划表进入）
   {
     path: "/homepage",
     component: () => import("../views/Homepage.vue")
   },
+  // 个人主页（我的页点个人主页进入）
   {
     path: "*",
     component: () => import("../views/NotFound.vue")
