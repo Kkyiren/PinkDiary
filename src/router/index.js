@@ -21,16 +21,19 @@ const routes = [
     path: "/planet",
     component: () => import("../views/Planet.vue")
   },
+  // 宝藏星球
   {
     path: "/diary",
     component: () => import("../views/Diary.vue")
   },
+  // 日记页（首页点grid宫格日记进入）
   // 沈万生对应的页面 TallyBook && MemorialDay && Constellation
   // 图片资源路径 /src/assets/img/pink-09
   {
     path: "/tallyBook",
     component: () => import("../components/TallyBook.vue")
   },
+  // 手账页（首页点grid宫格手账进入）
   {
     path: "/memorialDay",
     component: () => import("../components/MemorialDay.vue")

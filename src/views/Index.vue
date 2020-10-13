@@ -5,7 +5,7 @@
         <img src="../assets/img/yjz-index/left.png" alt="" />
       </a>
       <h2>粉粉日记</h2>
-      <a href="javascript:;">
+      <a href="javascript:;" @click="login">
         <img src="../assets/img/yjz-index/right.png" alt="" />
       </a>
     </header>
@@ -75,6 +75,9 @@ export default {
       this.bannerList = str.data.banner;
       this.girdList = str.data.grid;
       this.tabsList = str.data.tabs;
+    },
+    login() {
+      this.$router.push("/login");
     }
   },
   mounted() {
