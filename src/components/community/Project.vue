@@ -45,7 +45,7 @@
       <span>520&nbsp;&nbsp;评论</span>
     </div>
     <div class="hot-line"></div>
-        <div class="hot-list">
+    <div class="hot-list">
       <h4>心里调试|放下心软，放下敏感</h4>
       <div class="hot-msg">
         <img src="../../assets/img/pink-community/portrait.png" alt="" />
@@ -56,7 +56,6 @@
         对于重感情的人来说，心软和敏感，是两种最难治愈的疾
         病。既心软又敏感的人，心里总是装了太多放不下的东...
       </p>
-
       <span>3468 &nbsp;&nbsp; 再看</span>&nbsp;&nbsp;
       <span>70&nbsp;&nbsp;评论</span>
     </div>

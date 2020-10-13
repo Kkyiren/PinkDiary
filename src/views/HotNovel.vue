@@ -41,56 +41,46 @@
           <img src="../assets/img/yjj-hotnovel/huanyipi.png" alt="" />
         </div>
       </div>
+
       <div class="search-bottom">
-        <div class="search-bottom-top">
+        <div class="search-bottom-top" v-if="novelList.length > 0">
           <img src="../assets/img/yjj-hotnovel/fengliushaoye.png" alt="" />
           <div class="search-bottom-top-right">
             <div class="right-one">
-              <h3>风流少爷</h3>
-              <div class="yuan">8.9分</div>
+              <h3>{{ novelList[0].noveltitle }}</h3>
+              <div class="yuan">{{ novelList[0].score }}分</div>
             </div>
             <div class="right-two">
               <div class="first">
-                已完结
+                {{ novelList[0].state }}
               </div>
               <div class="second">
-                落魄的作家
+                {{ novelList[0].name }}
               </div>
               <div class="third">
-                都市
+                {{ novelList[0].city }}
               </div>
             </div>
             <div class="right-three">
-              一个带着多层神秘身份的少年，且看他在
-              红尘都市中，如何纵意花丛，怎样耍尽流
-              氓与无赖，如何把对手玩弄于股掌之上...
+              {{ novelList[0].msg }}
             </div>
             <div class="right-four">
-              读完本书预计可赚2730书币
+              {{ novelList[0].much }}
             </div>
           </div>
         </div>
+        <!-- 这个渲染好了  -->
         <div class="search-bottom-bottom">
-          <div class="left">
+          <div class="left" v-for="(item, index) in sanlieList" :key="index">
             <img src="../assets/img/yjj-hotnovel/dujia.png" alt="" />
-            <p>独家特助：原...</p>
-            <span>21.9万人读过</span>
-          </div>
-          <div class="left">
-            <img src="../assets/img/yjj-hotnovel/jpin.png" alt="" />
-            <p>极品房东</p>
-            <span>17.6万人读过</span>
-          </div>
-          <div class="left">
-            <img src="../assets/img/yjj-hotnovel/jpin.png" alt="" />
-            <p>偏偏喜欢你</p>
-            <span>4.0万人读过</span>
+            <p>{{ item.noveltitle }}</p>
+            <span>{{ item.number }}万人读过</span>
           </div>
         </div>
       </div>
 
       <div class="jiange"></div>
-
+      <!-- 完本推荐 -->
       <div class="search-center">
         <div class="search-center-left">
           <img src="../assets/img/yjj-hotnovel/shuchangtiao.png" alt="" />
@@ -102,61 +92,57 @@
         </div>
       </div>
       <div class="search-bottom">
-        <div class="search-bottom-top">
+        <div class="search-bottom-top" v-if="novelList.length > 0">
           <img src="../assets/img/yjj-hotnovel/fengliushaoye.png" alt="" />
           <div class="search-bottom-top-right">
             <div class="right-one">
-              <h3>风流少爷</h3>
-              <div class="yuan">8.9分</div>
+              <h3>{{ novelList[0].noveltitle }}</h3>
+              <div class="yuan">{{ novelList[0].score }}分</div>
             </div>
             <div class="right-two">
               <div class="first">
-                已完结
+                {{ novelList[0].state }}
               </div>
               <div class="second">
-                落魄的作家
+                {{ novelList[0].name }}
               </div>
               <div class="third">
-                都市
+                {{ novelList[0].city }}
               </div>
             </div>
             <div class="right-three">
-              一个带着多层神秘身份的少年，且看他在
-              红尘都市中，如何纵意花丛，怎样耍尽流
-              氓与无赖，如何把对手玩弄于股掌之上...
+              {{ novelList[0].msg }}
             </div>
             <div class="right-four">
-              读完本书预计可赚2730书币
+              {{ novelList[0].much }}
             </div>
           </div>
         </div>
       </div>
       <div class="search-bottom">
-        <div class="search-bottom-top">
+        <div class="search-bottom-top" v-if="novelList.length > 0">
           <img src="../assets/img/yjj-hotnovel/fengliushaoye.png" alt="" />
           <div class="search-bottom-top-right">
             <div class="right-one">
-              <h3>风流少爷</h3>
-              <div class="yuan">8.9分</div>
+              <h3>{{ novelList[0].noveltitle }}</h3>
+              <div class="yuan">{{ novelList[0].score }}分</div>
             </div>
             <div class="right-two">
               <div class="first">
-                已完结
+                {{ novelList[0].state }}
               </div>
               <div class="second">
-                落魄的作家
+                {{ novelList[0].name }}
               </div>
               <div class="third">
-                都市
+                {{ novelList[0].city }}
               </div>
             </div>
             <div class="right-three">
-              一个带着多层神秘身份的少年，且看他在
-              红尘都市中，如何纵意花丛，怎样耍尽流
-              氓与无赖，如何把对手玩弄于股掌之上...
+              {{ novelList[0].msg }}
             </div>
             <div class="right-four">
-              读完本书预计可赚2730书币
+              {{ novelList[0].much }}
             </div>
           </div>
         </div>
@@ -164,4 +150,27 @@
     </div>
   </div>
 </template>
+
+<script>
+import { hotNovel } from "../utils/api.js";
+export default {
+  data() {
+    return {
+      novelList: [],
+      sanlieList: []
+    };
+  },
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    async getData() {
+      let str = await hotNovel();
+      this.novelList = str.data.result;
+      this.sanlieList = str.data.sanlie;
+      console.log(this.novelList);
+    }
+  }
+};
+</script>
 <style lang="stylus" scoped></style>

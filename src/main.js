@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import './assets/font/iconfont.css';
+import "./assets/font/iconfont.css";
 
 // 以下来自yjz
 import {
@@ -31,7 +31,8 @@ import {
   Radio,
   RadioGroup,
   Field,
-  Button
+  Button,
+  Loading
 } from "vant";
 
 Vue.use(Popup);
@@ -71,6 +72,7 @@ Vue.use(Button);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 Vue.use(Progress);
+Vue.use(Loading);
 
 import "vant/lib/index.css";
 
