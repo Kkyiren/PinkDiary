@@ -58,9 +58,18 @@ export default {
   },
   methods: {
     change(index, url) {
-      this.activeIndex = index;
-      this.$router.push(url);
+      if (url !== this.$route.path) {
+        this.$router.push(url);
+        this.activeIndex = index;
+      }
     }
+  },
+  mounted() {
+    this.list.forEach((value, index) => {
+      if (value.url == this.$route.path) {
+        this.activeIndex = index;
+      }
+    });
   },
   components: {
     communityList

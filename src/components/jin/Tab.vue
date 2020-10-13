@@ -54,29 +54,25 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-ul{
-  display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-}
-li{
-  width: 36px;
-  height: 18px;
-  font-size: 13px;
-  font-family: PingFang;
-  color: #FFFFFF;
-  text-align: center;
-}
-.active{
-  font-size: 18px;
-  font-weight: bold;
-}
-.underLine{
-  width: 16px;
-  height: 2px;
-  background: #FBF7F8;
-  border-radius: 1px;
-  margin-left: 10px;
-  margin-top: 3px;
-}
+ul
+  display flex
+  justify-content space-around
+  padding-top 10px
+li
+  width 36px
+  height 18px
+  font-size 13px
+  font-family PingFang
+  color #FFFFFF
+  text-align center
+.active
+  font-size 18px
+  font-weight bold
+.underLine
+  width 16px
+  height 2px
+  background #FBF7F8
+  border-radius 1px
+  margin-left 10px
+  margin-top 3px
 </style>

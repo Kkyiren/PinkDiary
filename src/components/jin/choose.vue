@@ -70,34 +70,28 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-ul {
-  width: 374px;
-  height: 779px;
-  overflow: scroll;
-}
-li {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  padding-bottom: 15px;
-}
-img {
-  width: 110px;
-  height: 110px;
-}
-.wrap div {
-  font-size: 18px;
-  font-family: PingFang;
-  color: #000000;
-}
-.wrap span {
-  font-size: 14px;
-}
-.wrap i {
-  font-size: 18px;
-  color: #fd548a;
-  position: relative;
-  top: 35px;
-  right: 70px;
-}
+ul
+  width 374px
+  height 779px
+  overflow scroll
+li
+  display flex
+  flex-flow row
+  justify-content space-around
+  padding-bottom 15px
+img
+  width 110px
+  height 110px
+.wrap div
+  font-size 18px
+  font-family PingFang
+  color #000000
+.wrap span
+  font-size 14px
+.wrap i
+  font-size 18px
+  color #fd548a
+  position relative
+  top 35px
+  right 70px
 </style>

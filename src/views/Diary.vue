@@ -2,7 +2,7 @@
   <div class="diary-body">
     <header class="diary-head">
       <div class="diary-nav">
-        <div class="nav-left">
+        <div class="nav-left" @click="backindex">
           <img src="../assets/img/yjz-diary/back.png" alt="" />
         </div>
         <h2 class="title">Smile</h2>
@@ -30,261 +30,28 @@
     </header>
     <!-- 头部 -->
     <main class="diary-main">
-      <div class="main-mode">
+      <div class="main-mode" v-for="(item, index) in diaryList" :key="index">
         <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
+          <img
+            v-for="(item, index) in yuanimg"
+            :key="index"
+            :src="item.url"
+            alt=""
+          />
         </div>
         <div class="mode-center">
           <div class="center-time">
-            2020-05-20 13:14
+            {{ item.time }}
           </div>
           <div class="center-name">
-            日记
+            {{ item.name }}
           </div>
           <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
+            {{ item.title }}
           </div>
           <div class="center-address">
             <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <!-- 模块 -->
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
-          </div>
-        </div>
-        <div class="mode-right">
-          <img src="../assets/img/yjz-diary/weater.png" alt="" />
-        </div>
-      </div>
-      <div class="main-mode">
-        <div class="mode-left">
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-          <img src="../assets/img/yjz-diary/yuan.png" alt="" />
-        </div>
-        <div class="mode-center">
-          <div class="center-time">
-            2020-05-20 13:14
-          </div>
-          <div class="center-name">
-            日记
-          </div>
-          <div class="center-title">
-            今天天气很好，一切都好(^ — ^)V
-          </div>
-          <div class="center-address">
-            <img src="../assets/img/yjz-diary/address.png" alt="" />
-            上海市
+            {{ item.address }}
           </div>
         </div>
         <div class="mode-right">
@@ -301,9 +68,26 @@
 </template>
 
 <script>
+import { diary } from "../utils/api.js";
 export default {
   data() {
-    return {};
+    return {
+      yuanimg: [],
+      diaryList: []
+    };
+  },
+  methods: {
+    backindex() {
+      this.$router.go(-1);
+    },
+    async getData() {
+      let str = await diary();
+      this.yuanimg = str.data.yuan;
+      this.diaryList = str.data.result;
+    }
+  },
+  mounted() {
+    this.getData();
   }
 };
 </script>
