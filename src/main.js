@@ -32,7 +32,8 @@ import {
   Radio,
   RadioGroup,
   Field,
-  Button
+  Button,
+  Loading
 } from "vant";
 
 Vue.use(Popup);
@@ -72,6 +73,7 @@ Vue.use(Button);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 Vue.use(Progress);
+Vue.use(Loading);
 
 import "vant/lib/index.css";
 

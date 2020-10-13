@@ -3,9 +3,11 @@
     <!-- 头部 -->
     <van-nav-bar>
       <template #left>
-        <img src="../assets/img/pink-09/arrows.png" alt="" />
-        <img src="../assets/img/pink-09/orthogon.png" alt="" />
-        <img src="../assets/img/pink-09/arrows.png" alt="" />
+        <div @click="back">
+          <img src="../assets/img/pink-09/arrows.png" alt="" />
+          <img src="../assets/img/pink-09/orthogon.png" alt="" />
+          <img src="../assets/img/pink-09/arrows.png" alt="" />
+        </div>
       </template>
       <template #title>
         <span class="title">粉粉星座</span>
@@ -31,7 +33,7 @@
       </div>
       <div class="bottom">
         <div class="yi">
-          <span>宜</span>
+          <span class="nn">宜</span>
           <i>求职、应酬</i>
         </div>
         <div class="ji">
@@ -101,7 +103,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    back() {
+      this.$router.go(-1);
+    }
+  }
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -148,40 +156,33 @@ export default {};
       height: 125px;
       display: flex;
       align-items: center;
-
       .head-left {
         display: flex;
         flex-direction: column;
         margin-left: 15px;
-
         img {
           width: 75px;
           height: 80px;
         }
-
         span {
           font-szie: 17px;
           margin-top: 10px;
         }
       }
-
       .head-right {
         display: flex;
         // flex-direction column
         align-items: center;
         margin-left: 130px;
-
         .luck {
           display: flex;
           flex-direction: column;
-
           span {
             &:first-child {
               i {
                 font-size: 36px;
               }
             }
-
             &:last-child {
               margin-top: 10px;
               width: 60px;
@@ -197,32 +198,27 @@ export default {};
         }
       }
     }
-
     p {
       width: 309px;
       font-size: 13px;
       color: #8860C5;
       margin: 0 auto;
     }
-
     .bottom {
       height: 90px;
       width: 100%;
       display: flex;
       margin-top: 30px;
-
       >div {
         width: 50%;
         height: 100%;
         background: #5C2EA8;
       }
-
       .yi, .ji {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: center;
         align-items: center;
-
         span {
           width: 40px;
           height: 40px;
@@ -233,17 +229,14 @@ export default {};
           justify-content: center;
           align-items: center;
         }
-
         i {
           color: #A88DD3;
           font-size: 13px;
           margin-top: 10px;
         }
       }
-
       .ji {
         background: #6236AA;
-
         span {
           border: 5px solid red;
         }
@@ -263,14 +256,12 @@ export default {};
   align-items: center;
   margin-top: 30px;
   margin-bottom: 20px;
-
   .activity-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 13px;
     color: #fff;
-
     p {
       &:last-child {
         font-size: 10px;
@@ -312,7 +303,6 @@ export default {};
       color: #FC6BEF;
       font-style: italic;
       font-weight: 400;
-
       &:last-child {
         color: #2CE1CB;
         margin-top: 5px;
@@ -322,10 +312,10 @@ export default {};
 
   .itm02 {
     span {
+      color red
       font-size: 13px;
       line-height: 30px;
     }
-
     p {
       font-size: 11px;
       line-height: 30px;
@@ -425,6 +415,44 @@ export default {};
           }
         }
       }
+    }
+  }
+}
+.bottom {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  >div {
+    width: 50%;
+    height: 100%;
+    background: #5C2EA8;
+  }
+  .yi, .ji {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+      width: 40px;
+      height: 40px;
+      border: 5px solid green;
+      border-radius: 100%;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    i {
+      color: #A88DD3;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+  }
+  .ji {
+    background: #6236AA;
+    span {
+      border: 5px solid red;
     }
   }
 }

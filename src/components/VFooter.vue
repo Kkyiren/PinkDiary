@@ -61,8 +61,6 @@ export default {
   methods: {
     change(i) {
       this.num = i;
-      console.log(i);
-      // this.$router.push(it.path);
     }
   }
 };

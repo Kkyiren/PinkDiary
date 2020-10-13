@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <ul id="app">
     <li v-for="(item, index) in electricalList" :key="index">
       <!-- <img :src="item.url" alt=""> -->
@@ -12,6 +13,11 @@
       </div>
     </li>
   </ul>
+=======
+  <div>
+    sdg
+  </div>
+>>>>>>> 4da0cc2df8209632d77625abbf800bbf13f39606
 </template>
 
 <script>

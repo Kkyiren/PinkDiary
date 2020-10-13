@@ -25,15 +25,13 @@
     </van-radio-group>
   </div>
 </template>
-<script>
-</script>
 <style lang="stylus" scoped>
 .nav-bar {
   background: pink;
 }
 
 .box-1 {
-  background: #ccc;
+  background: #fbf7f8;
   padding: 10px 0;
 }
 
