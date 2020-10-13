@@ -70,6 +70,15 @@ export default {
     };
   },
   methods: {
+    tallyBook() {
+      this.$router.push("/tallyBook");
+    },
+    memorialDay() {
+      this.$router.push("/memorialDay");
+    },
+    constellation() {
+      this.$router.push("/constellation");
+    },
     async getData() {
       let str = await indexImages();
       this.bannerList = str.data.banner;

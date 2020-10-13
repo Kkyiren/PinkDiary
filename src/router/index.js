@@ -35,6 +35,10 @@ const routes = [
   },
   // 手账页（首页点grid宫格手账进入）
   {
+    path: "/tallyAdd", //账本添加
+    component: () => import("../components/TallyAdd.vue")
+  },
+  {
     path: "/memorialDay",
     component: () => import("../components/MemorialDay.vue")
   },
