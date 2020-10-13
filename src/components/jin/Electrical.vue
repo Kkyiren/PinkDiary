@@ -1,5 +1,5 @@
 <template>
-  <ul class="choose">
+  <ul id="app">
     <li v-for="(item, index) in electricalList" :key="index">
       <!-- <img :src="item.url" alt=""> -->
       <p><img :src="item.url" alt="" /></p>
@@ -18,13 +18,13 @@
 import { mapState, mapActions } from "vuex";
 export default {
   methods: {
-    ...mapActions(["getElectricalList"])
+    ...mapActions(["getEletricalList"])
   },
   computed: {
     ...mapState(["electricalList"])
   },
   mounted() {
-    this.getElectricalList();
+    this.getEletricalList();
   }
 };
 </script>
@@ -45,6 +45,8 @@ li {
 img {
   width: 110px;
   height: 110px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .wrap div {
@@ -60,5 +62,19 @@ img {
 .wrap i {
   font-size: 18px;
   color: #fd548a;
+}
+
+.meng {
+  width: 100%;
+  height: 80px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 43, 127, 0.74),
+    rgba(255, 14, 65, 0.74),
+    
+  );
 }
 </style>

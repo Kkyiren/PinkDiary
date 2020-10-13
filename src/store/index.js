@@ -1,13 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { getClassify, getShopping } from "../utils/api";
+import { getClassify, getShopping, getEletrical } from "../utils/api";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     classifyList: [],
-    shoppingList: []
+    shoppingList: [],
+    electricalList: [],
   },
   mutations: {
     getClassifyList1(state, payload) {
@@ -15,6 +16,9 @@ export default new Vuex.Store({
     },
     ShoppingList(state, payload) {
       state.shoppingList = payload.result;
+    },
+    eletricalList(state, payload) {
+      state.electricalList = payload.result;
     },
   },
   actions: {
@@ -28,7 +32,12 @@ export default new Vuex.Store({
       const res = await getShopping();
       console.log(res.data);
       commit("ShoppingList", res.data);
-    }
+    },
+    async getEletricalList({ commit }) {
+      const res = await getEletrical();
+      console.log(res.data);
+      commit("eletricalList", res.data);
+    },
   },
   modules: {}
 });

@@ -22,3 +22,8 @@ export function getShopping(a) {
   let obj = http.get("/add/shopping", a);
   return obj;
 }
+//电器详情页
+export function getEletrical(a) {
+  let obj = http.get("/electric", a);
+  return obj;
+}

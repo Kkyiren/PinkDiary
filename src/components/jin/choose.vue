@@ -29,9 +29,9 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-ul {
+.choose {
   width: 374px;
-  height: 779px;
+  height: 529px;
   overflow: scroll;
 }
 
