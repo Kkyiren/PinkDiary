@@ -1,29 +1,32 @@
 <template>
   <div id="app">
-    <div class="header">
-      <div class="header_top">
-        <div style="height: 27px"></div>
-        <p>可萌街</p>
-        <div class="header_second">
-          <p>
-            <i></i>
-            <span></span>
-            <i></i>
-          </p>
-          <b></b>
-          <strong><i></i></strong>
+    <div class="whi">
+      <div class="header">
+        <div class="header_top">
+          <div style="height: 27px"></div>
+          <p>可萌街</p>
+          <div class="header_second">
+            <p>
+              <i></i>
+              <span></span>
+              <i></i>
+            </p>
+            <b></b>
+            <strong><i></i></strong>
+          </div>
         </div>
+        <div class="table">
+          <p class="input">粘贴宝贝标题，先领卷再购物</p>
+        </div>
+        <tab />
       </div>
-      <div class="table">
-        <p class="input">粘贴宝贝标题，先领卷再购物</p>
-      </div>
-      <tab />
     </div>
   </div>
 </template>
 
 <script>
 import Tab from "@/components/jin/Tab";
+
 export default {
   components: {
     Tab
@@ -31,9 +34,18 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
+.whi {
+  height: 161px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
 #app {
   height: 161px;
-  background: white;
+  width: 100%;
 }
 
 .header {
@@ -124,7 +136,7 @@ export default {
     height: 9px;
     background: #000000;
     border-radius: 50%;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     margin-left: 3.5px;
   }
 

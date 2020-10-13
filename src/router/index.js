@@ -125,47 +125,6 @@ const routes = [
     component: () => import("../views/Homepage.vue")
   },
   {
-    path: '/shopping',
-    component: () =>
-      import('../views/shopping.vue'),
-    children: [
-      {
-        path: '/shopping',
-        redirect: '/choose'
-      },
-      {
-        path: '/choose',
-        component: () =>
-          import('../components/choose.vue')
-      },
-      {
-        path: '/Electrical',
-        component: () =>
-          import('../components/Electrical.vue')
-      },
-      {
-        path: '/phone',
-        component: () =>
-          import('../components/phone.vue')
-      },
-      {
-        path: '/close',
-        component: () =>
-          import('../components/close.vue')
-      },
-      {
-        path: '/Computer',
-        component: () =>
-          import('../components/Computer.vue')
-      },
-      {
-        path: '/beauty',
-        component: () =>
-          import('../components/beauty.vue')
-      }
-    ]
-  },
-  {
     path: "*",
     component: () => import("../views/NotFound.vue")
   }

@@ -1,1 +1,0 @@
-<style lang="stylus" scoped></style>

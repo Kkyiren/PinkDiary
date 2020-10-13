@@ -17,3 +17,8 @@ export function mallLetter(a) {
   let obj = http.get("/mall/letter", a);
   return obj;
 }
+//详情数据页
+export function getShopping(a) {
+  let obj = http.get("/add/shopping", a);
+  return obj;
+}

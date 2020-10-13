@@ -3,11 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-<<<<<<< HEAD
-import './assets/font/iconfont.css';
-=======
+
 import "./assets/font/iconfont.css";
->>>>>>> 0119a583ba909db42517beb8f16a80881130bf80
 
 // 以下来自yjz
 import {
