@@ -70,11 +70,28 @@ const routes = [
     component: () => import("../views/NSetup.vue")
   },
   // 设置页
+  // 商店
   {
     path: "/shop",
     component: () => import("../views/Shop.vue")
   },
   // 更多（首页点grid宫格更多进入）
+  // 登入
+  {
+    path: "/login",
+    component: () => import("../views/Login.vue")
+  },
+  // 注册
+  {
+    path: "/regeister",
+    component: () => import("../views/Login-regeister.vue")
+  },
+  // 提交注册-注册
+  {
+    path: "/next",
+    component: () => import("../views/Login-regeister-next.vue")
+  },
+
   {
     path: "/community",
     component: () => import("../views/Community.vue"),

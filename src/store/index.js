@@ -11,6 +11,7 @@ import url03 from "../assets/img/pink-09/traffic.png";
 export default new Vuex.Store({
   state: {
     classifyList: [],
+    phone: "",
     detailList: [
       {
         src: url03,
@@ -32,6 +33,9 @@ export default new Vuex.Store({
   mutations: {
     getClassifyList1(state, payload) {
       state.classifyList = payload.result;
+    },
+    setPhone(state, payload) {
+      state.phone = payload;
     },
     getDetailList(state, payload) {
       state.detailList.push(payload);
